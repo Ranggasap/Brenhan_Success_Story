@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8880530026178415489
+--- !u!114 &-8713951812717616101
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9,42 +9,42 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a3c599ddc9a1b854f85859c7762a12fb, type: 3}
-  m_Name: Dialogue Element
+  m_Script: {fileID: 11500000, guid: adabf642a00adb64f98845666fedcc5a, type: 3}
+  m_Name: Audio Dialogue Element
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 8440, y: -8}
+  position: {x: 18696, y: -856}
   ports:
     keys:
     - PreviousNode
     - NextNode
     values:
     - _fieldName: PreviousNode
-      _node: {fileID: -8880530026178415489}
+      _node: {fileID: -8713951812717616101}
       _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections:
-      - fieldName: NextNode
-        node: {fileID: -6837374074360815640}
+      - fieldName: Choice0
+        node: {fileID: -1768207896223625835}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: NextNode
-      _node: {fileID: -8880530026178415489}
+      _node: {fileID: -8713951812717616101}
       _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections:
       - fieldName: PreviousNode
-        node: {fileID: -1522815258023470846}
+        node: {fileID: -5353916417591795106}
         reroutePoints: []
       _direction: 1
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
   Active: 0
-  Next: {fileID: -1522815258023470846}
+  Next: {fileID: -5353916417591795106}
   PreviousNode:
     _fieldName: 
     _node: {fileID: 0}
@@ -63,10 +63,16 @@ MonoBehaviour:
     _connectionType: 0
     _typeConstraint: 0
     _dynamic: 0
-  CharacterName: Velorexe
-  Dialogue: Even though it contains a lot of rings and bells, I didn't forget about
-    the core features...
---- !u!114 &-7925866276808309983
+  CharacterName: Brenhan
+  Dialogue: Nanti saja yah Rangga, aku sama Evans berencana buat belajar bareng buat
+    ujian nanti
+  Beep: 1
+  BeepOnVowel: 0
+  PitchShift: 0
+  MaxPitch: 0
+  BoopSoundEffect: {fileID: 8300000, guid: c8fa33de6006b874dbe76170f373dc23, type: 3}
+  DialogueClip: {fileID: 0}
+--- !u!114 &-8273751858683272472
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -75,42 +81,42 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 477b8157536ff9a4e8bcfb67567fee30, type: 3}
-  m_Name: Change Sprite Element
+  m_Script: {fileID: 11500000, guid: adabf642a00adb64f98845666fedcc5a, type: 3}
+  m_Name: Audio Dialogue Element
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 10712, y: 8}
+  position: {x: 19080, y: -328}
   ports:
     keys:
     - PreviousNode
     - NextNode
     values:
     - _fieldName: PreviousNode
-      _node: {fileID: -7925866276808309983}
+      _node: {fileID: -8273751858683272472}
       _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections:
       - fieldName: NextNode
-        node: {fileID: -7543352829120350252}
+        node: {fileID: -2899058501203749462}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: NextNode
-      _node: {fileID: -7925866276808309983}
+      _node: {fileID: -8273751858683272472}
       _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections:
       - fieldName: PreviousNode
-        node: {fileID: 7815111530212063091}
+        node: {fileID: -2173528282561941774}
         reroutePoints: []
       _direction: 1
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
   Active: 0
-  Next: {fileID: 7815111530212063091}
+  Next: {fileID: -2173528282561941774}
   PreviousNode:
     _fieldName: 
     _node: {fileID: 0}
@@ -129,9 +135,15 @@ MonoBehaviour:
     _connectionType: 0
     _typeConstraint: 0
     _dynamic: 0
-  CharacterName: Velorexe
-  NewSprite: {fileID: 21300000, guid: 54da592a2023b7d49b6eaa575b7aa54f, type: 3}
---- !u!114 &-7543352829120350252
+  CharacterName: Evans
+  Dialogue: Ohh okee, next time aja kita belajar barengnya
+  Beep: 1
+  BeepOnVowel: 0
+  PitchShift: 0
+  MaxPitch: 0
+  BoopSoundEffect: {fileID: 8300000, guid: c8fa33de6006b874dbe76170f373dc23, type: 3}
+  DialogueClip: {fileID: 0}
+--- !u!114 &-8018070471083523046
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -140,42 +152,42 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a3c599ddc9a1b854f85859c7762a12fb, type: 3}
-  m_Name: Dialogue Element
+  m_Script: {fileID: 11500000, guid: 31f75b66cbe889d4cb63a0a491cf5a3b, type: 3}
+  m_Name: Enter Scene Element
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 10392, y: 8}
+  position: {x: 2520, y: 328}
   ports:
     keys:
     - PreviousNode
     - NextNode
     values:
     - _fieldName: PreviousNode
-      _node: {fileID: -7543352829120350252}
+      _node: {fileID: -8018070471083523046}
       _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections:
       - fieldName: NextNode
-        node: {fileID: -1398034605684631682}
+        node: {fileID: 5842048289643196555}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: NextNode
-      _node: {fileID: -7543352829120350252}
+      _node: {fileID: -8018070471083523046}
       _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections:
       - fieldName: PreviousNode
-        node: {fileID: -7925866276808309983}
+        node: {fileID: 5660813780440206128}
         reroutePoints: []
       _direction: 1
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
   Active: 0
-  Next: {fileID: -7925866276808309983}
+  Next: {fileID: 5660813780440206128}
   PreviousNode:
     _fieldName: 
     _node: {fileID: 0}
@@ -194,10 +206,144 @@ MonoBehaviour:
     _connectionType: 0
     _typeConstraint: 0
     _dynamic: 0
-  CharacterName: Velorexe
-  Dialogue: If you're really depraved on info, please DM me on Discord (Velorexe#8403,
-    still thinking about opening a Discord server). You can also DM me if you want
-    custom elements that you think the framework needs.
+  CharacterName: Brenhan
+  Character: {fileID: 21300000, guid: 6e87ad3c6517e0941ae9685495ec33c6, type: 3}
+  Flip: 0
+  EnterFromDirection: 0
+  FinalPosition: 0
+  EnterTime: 2
+--- !u!114 &-7761332632749385518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61fe714cebce5fe4ba0b71d53f36fade, type: 3}
+  m_Name: Change Background Element
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 21480, y: -264}
+  ports:
+    keys:
+    - PreviousNode
+    - NextNode
+    values:
+    - _fieldName: PreviousNode
+      _node: {fileID: -7761332632749385518}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: NextNode
+        node: {fileID: -2123218782724513457}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: NextNode
+      _node: {fileID: -7761332632749385518}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: PreviousNode
+        node: {fileID: 8659774904804774652}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  Active: 0
+  Next: {fileID: 8659774904804774652}
+  PreviousNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  NextNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  NewBackground: {fileID: 21300000, guid: e9fc4cc269e188942b0cf2a6c595b7f5, type: 3}
+  Fade: 1
+  FadeTime: 1
+--- !u!114 &-7569021140806377174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61fe714cebce5fe4ba0b71d53f36fade, type: 3}
+  m_Name: Change Background Element
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 21528, y: -984}
+  ports:
+    keys:
+    - PreviousNode
+    - NextNode
+    values:
+    - _fieldName: PreviousNode
+      _node: {fileID: -7569021140806377174}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: NextNode
+        node: {fileID: 4512040306052948238}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: NextNode
+      _node: {fileID: -7569021140806377174}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: PreviousNode
+        node: {fileID: 2535755050067135849}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  Active: 0
+  Next: {fileID: 2535755050067135849}
+  PreviousNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  NextNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  NewBackground: {fileID: 21300000, guid: e9fc4cc269e188942b0cf2a6c595b7f5, type: 3}
+  Fade: 1
+  FadeTime: 1
 --- !u!114 &-7370418430665757278
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -211,7 +357,7 @@ MonoBehaviour:
   m_Name: Audio Dialogue Element
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 7352, y: -440}
+  position: {x: 8920, y: -520}
   ports:
     keys:
     - PreviousNode
@@ -262,14 +408,218 @@ MonoBehaviour:
     _typeConstraint: 0
     _dynamic: 0
   CharacterName: Evans
-  Dialogue: Kamu tidak apa apa anak baru, aku evans dan ini temanku rangga, salam
+  Dialogue: Kamu tidak apa apa anak baru, aku Evans dan ini temanku Rangga, salam
     kenal yah
   Beep: 1
   BeepOnVowel: 0
   PitchShift: 0
   MaxPitch: 0
-  BoopSoundEffect: {fileID: 0}
+  BoopSoundEffect: {fileID: 8300000, guid: c8fa33de6006b874dbe76170f373dc23, type: 3}
   DialogueClip: {fileID: 0}
+--- !u!114 &-7339929055468810970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adabf642a00adb64f98845666fedcc5a, type: 3}
+  m_Name: Audio Dialogue Element
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 8584, y: 232}
+  ports:
+    keys:
+    - PreviousNode
+    - NextNode
+    values:
+    - _fieldName: PreviousNode
+      _node: {fileID: -7339929055468810970}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: NextNode
+        node: {fileID: 8194312446476994431}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: NextNode
+      _node: {fileID: -7339929055468810970}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: PreviousNode
+        node: {fileID: 761547030029457639}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  Active: 0
+  Next: {fileID: 761547030029457639}
+  PreviousNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  NextNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  CharacterName: Narrator
+  Dialogue: "Nico sedih, namun dia benar benar belajar dari pengalaman pahitnya untuk
+    tidak semena mena sama orang lain dan selalu berbuat baik dengan sesama\u201D"
+  Beep: 1
+  BeepOnVowel: 0
+  PitchShift: 0
+  MaxPitch: 0
+  BoopSoundEffect: {fileID: 8300000, guid: c8fa33de6006b874dbe76170f373dc23, type: 3}
+  DialogueClip: {fileID: 0}
+--- !u!114 &-7229465601492288989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e69886790097bca409901d96bb3c0b2b, type: 3}
+  m_Name: Exit Scene Element
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 8248, y: 856}
+  ports:
+    keys:
+    - PreviousNode
+    - NextNode
+    values:
+    - _fieldName: PreviousNode
+      _node: {fileID: -7229465601492288989}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: NextNode
+        node: {fileID: 2783067641319288440}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: NextNode
+      _node: {fileID: -7229465601492288989}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: PreviousNode
+        node: {fileID: 998866305112232276}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  Active: 0
+  Next: {fileID: 998866305112232276}
+  PreviousNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  NextNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  CharacterName: Brenhan
+  ExitPosition: 0
+  ExitTime: 1
+--- !u!114 &-7138757652546800438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61fe714cebce5fe4ba0b71d53f36fade, type: 3}
+  m_Name: Change Background Element
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 20328, y: -232}
+  ports:
+    keys:
+    - PreviousNode
+    - NextNode
+    values:
+    - _fieldName: PreviousNode
+      _node: {fileID: -7138757652546800438}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: NextNode
+        node: {fileID: 7695958944125029517}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: NextNode
+      _node: {fileID: -7138757652546800438}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: PreviousNode
+        node: {fileID: -4640375615358675429}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  Active: 0
+  Next: {fileID: -4640375615358675429}
+  PreviousNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  NextNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  NewBackground: {fileID: 21300000, guid: c29ee73d0b32b3f44a76639c35135eb6, type: 3}
+  Fade: 1
+  FadeTime: 1
 --- !u!114 &-7124300711845388791
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -283,7 +633,7 @@ MonoBehaviour:
   m_Name: Exit Scene Element
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 6376, y: -440}
+  position: {x: 7960, y: -536}
   ports:
     keys:
     - PreviousNode
@@ -336,7 +686,7 @@ MonoBehaviour:
   CharacterName: Nicho Kating
   ExitPosition: 1
   ExitTime: 1
---- !u!114 &-6837374074360815640
+--- !u!114 &-6981931894936851312
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -345,42 +695,42 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 477b8157536ff9a4e8bcfb67567fee30, type: 3}
-  m_Name: Change Sprite Element
+  m_Script: {fileID: 11500000, guid: adabf642a00adb64f98845666fedcc5a, type: 3}
+  m_Name: Audio Dialogue Element
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 8104, y: -8}
+  position: {x: 248, y: 392}
   ports:
     keys:
     - PreviousNode
     - NextNode
     values:
     - _fieldName: PreviousNode
-      _node: {fileID: -6837374074360815640}
+      _node: {fileID: -6981931894936851312}
       _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections:
       - fieldName: NextNode
-        node: {fileID: 1062457426058270779}
+        node: {fileID: 6146185006663411779}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: NextNode
-      _node: {fileID: -6837374074360815640}
+      _node: {fileID: -6981931894936851312}
       _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections:
       - fieldName: PreviousNode
-        node: {fileID: -8880530026178415489}
+        node: {fileID: 6133128419032258687}
         reroutePoints: []
       _direction: 1
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
   Active: 0
-  Next: {fileID: -8880530026178415489}
+  Next: {fileID: 6133128419032258687}
   PreviousNode:
     _fieldName: 
     _node: {fileID: 0}
@@ -399,8 +749,15 @@ MonoBehaviour:
     _connectionType: 0
     _typeConstraint: 0
     _dynamic: 0
-  CharacterName: Velorexe
-  NewSprite: {fileID: 21300000, guid: eadcd8ba451196a4e8eef12ee6fb7209, type: 3}
+  CharacterName: Narrator
+  Dialogue: Bertahun tahun berlalu dan Brenhan sudah menjadi CEO dari perusahaan
+    IT konsultannya
+  Beep: 1
+  BeepOnVowel: 0
+  PitchShift: 0
+  MaxPitch: 0
+  BoopSoundEffect: {fileID: 8300000, guid: c8fa33de6006b874dbe76170f373dc23, type: 3}
+  DialogueClip: {fileID: 0}
 --- !u!114 &-6770865231494950853
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -414,7 +771,7 @@ MonoBehaviour:
   m_Name: Audio Dialogue Element
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 1192, y: -616}
+  position: {x: 2168, y: -632}
   ports:
     keys:
     - PreviousNode
@@ -470,7 +827,7 @@ MonoBehaviour:
   BeepOnVowel: 0
   PitchShift: 0
   MaxPitch: 0
-  BoopSoundEffect: {fileID: 0}
+  BoopSoundEffect: {fileID: 8300000, guid: c8fa33de6006b874dbe76170f373dc23, type: 3}
   DialogueClip: {fileID: 0}
 --- !u!114 &-6664353289656554294
 MonoBehaviour:
@@ -536,76 +893,9 @@ MonoBehaviour:
     _typeConstraint: 0
     _dynamic: 0
   ShowLoadScreen: 0
-  FadeOutTime: 1
+  FadeOutTime: 0.001
   FadeOtherElements: 1
   WaitToFinish: 1
---- !u!114 &-6584678925603748989
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a3c599ddc9a1b854f85859c7762a12fb, type: 3}
-  m_Name: Dialogue Element
-  m_EditorClassIdentifier: 
-  graph: {fileID: 11400000}
-  position: {x: 6024, y: -8}
-  ports:
-    keys:
-    - PreviousNode
-    - NextNode
-    values:
-    - _fieldName: PreviousNode
-      _node: {fileID: -6584678925603748989}
-      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections:
-      - fieldName: NextNode
-        node: {fileID: -2260763046560012262}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: NextNode
-      _node: {fileID: -6584678925603748989}
-      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections:
-      - fieldName: PreviousNode
-        node: {fileID: 5964938735606451206}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
-  Active: 0
-  Next: {fileID: 5964938735606451206}
-  PreviousNode:
-    _fieldName: 
-    _node: {fileID: 0}
-    _typeQualifiedName: 
-    connections: []
-    _direction: 0
-    _connectionType: 0
-    _typeConstraint: 0
-    _dynamic: 0
-  NextNode:
-    _fieldName: 
-    _node: {fileID: 0}
-    _typeQualifiedName: 
-    connections: []
-    _direction: 0
-    _connectionType: 0
-    _typeConstraint: 0
-    _dynamic: 0
-  CharacterName: Velorexe
-  Dialogue: Since Characters are very important to any visual novel, I spend way
-    too much time implemented a stupid implementation that took way too much time
-    where characters "stack" on either side of the screen.
 --- !u!114 &-5765755265255397716
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -619,7 +909,7 @@ MonoBehaviour:
   m_Name: Enter Scene Element
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 13160, y: -696}
+  position: {x: 15096, y: -568}
   ports:
     keys:
     - PreviousNode
@@ -650,7 +940,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   Active: 0
-  Next: {fileID: 0}
+  Next: {fileID: 3857943165007244702}
   PreviousNode:
     _fieldName: 
     _node: {fileID: 0}
@@ -675,7 +965,7 @@ MonoBehaviour:
   EnterFromDirection: 1
   FinalPosition: 1
   EnterTime: 2
---- !u!114 &-5583132717968379321
+--- !u!114 &-5694023821529771397
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -688,38 +978,38 @@ MonoBehaviour:
   m_Name: Exit Scene Element
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 7096, y: -8}
+  position: {x: 19912, y: -856}
   ports:
     keys:
     - PreviousNode
     - NextNode
     values:
     - _fieldName: PreviousNode
-      _node: {fileID: -5583132717968379321}
+      _node: {fileID: -5694023821529771397}
       _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections:
       - fieldName: NextNode
-        node: {fileID: -117251844290693304}
+        node: {fileID: 8385627609139050202}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: NextNode
-      _node: {fileID: -5583132717968379321}
+      _node: {fileID: -5694023821529771397}
       _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections:
       - fieldName: PreviousNode
-        node: {fileID: 6472896098518316389}
+        node: {fileID: -4226095786449666050}
         reroutePoints: []
       _direction: 1
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
   Active: 0
-  Next: {fileID: 6472896098518316389}
+  Next: {fileID: -4226095786449666050}
   PreviousNode:
     _fieldName: 
     _node: {fileID: 0}
@@ -738,8 +1028,146 @@ MonoBehaviour:
     _connectionType: 0
     _typeConstraint: 0
     _dynamic: 0
-  CharacterName: Dummy_01
+  CharacterName: Evans
   ExitPosition: 1
+  ExitTime: 1
+--- !u!114 &-5353916417591795106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adabf642a00adb64f98845666fedcc5a, type: 3}
+  m_Name: Audio Dialogue Element
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 19080, y: -856}
+  ports:
+    keys:
+    - PreviousNode
+    - NextNode
+    values:
+    - _fieldName: PreviousNode
+      _node: {fileID: -5353916417591795106}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: NextNode
+        node: {fileID: -8713951812717616101}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: NextNode
+      _node: {fileID: -5353916417591795106}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: PreviousNode
+        node: {fileID: -4452533260710204689}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  Active: 0
+  Next: {fileID: -4452533260710204689}
+  PreviousNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  NextNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  CharacterName: Rangga
+  Dialogue: Wahh belajar bareng yah, hmmm okee deh gapapa Brenhan. Aku juga mau ikut
+    dong belajar bareng
+  Beep: 1
+  BeepOnVowel: 0
+  PitchShift: 0
+  MaxPitch: 0
+  BoopSoundEffect: {fileID: 8300000, guid: c8fa33de6006b874dbe76170f373dc23, type: 3}
+  DialogueClip: {fileID: 0}
+--- !u!114 &-5343891650230754450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e69886790097bca409901d96bb3c0b2b, type: 3}
+  m_Name: Exit Scene Element
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -744, y: 296}
+  ports:
+    keys:
+    - PreviousNode
+    - NextNode
+    values:
+    - _fieldName: PreviousNode
+      _node: {fileID: -5343891650230754450}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: NextNode
+        node: {fileID: 4735275333020133127}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: NextNode
+      _node: {fileID: -5343891650230754450}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: PreviousNode
+        node: {fileID: 258446910205005845}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  Active: 0
+  Next: {fileID: 258446910205005845}
+  PreviousNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  NextNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  CharacterName: Brenhan
+  ExitPosition: 0
   ExitTime: 1
 --- !u!114 &-5077881608772388172
 MonoBehaviour:
@@ -754,7 +1182,7 @@ MonoBehaviour:
   m_Name: Enter Scene Element
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 3960, y: -296}
+  position: {x: 5544, y: -584}
   ports:
     keys:
     - PreviousNode
@@ -810,7 +1238,7 @@ MonoBehaviour:
   EnterFromDirection: 0
   FinalPosition: 2
   EnterTime: 1
---- !u!114 &-4479720788931649049
+--- !u!114 &-4960281336533156021
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -819,18 +1247,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: adabf642a00adb64f98845666fedcc5a, type: 3}
-  m_Name: Audio Dialogue Element
+  m_Script: {fileID: 11500000, guid: 477b8157536ff9a4e8bcfb67567fee30, type: 3}
+  m_Name: Change Sprite Element
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 9656, y: -408}
+  position: {x: 10856, y: -616}
   ports:
     keys:
     - PreviousNode
     - NextNode
     values:
     - _fieldName: PreviousNode
-      _node: {fileID: -4479720788931649049}
+      _node: {fileID: -4960281336533156021}
       _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections:
@@ -842,19 +1270,19 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: NextNode
-      _node: {fileID: -4479720788931649049}
+      _node: {fileID: -4960281336533156021}
       _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections:
       - fieldName: PreviousNode
-        node: {fileID: 1347441856868865553}
+        node: {fileID: -4479720788931649049}
         reroutePoints: []
       _direction: 1
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
   Active: 0
-  Next: {fileID: 1347441856868865553}
+  Next: {fileID: -4479720788931649049}
   PreviousNode:
     _fieldName: 
     _node: {fileID: 0}
@@ -874,14 +1302,428 @@ MonoBehaviour:
     _typeConstraint: 0
     _dynamic: 0
   CharacterName: Brenhan
-  Dialogue: Terima kasih evans dan rangga, selama 4 tahun mohon kerja samanya dan
-    bimbingannya
+  NewSprite: {fileID: 21300000, guid: 327332fd420e0ba40806fdcf7b792d4c, type: 3}
+--- !u!114 &-4640375615358675429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adabf642a00adb64f98845666fedcc5a, type: 3}
+  m_Name: Audio Dialogue Element
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 20712, y: -232}
+  ports:
+    keys:
+    - PreviousNode
+    - NextNode
+    values:
+    - _fieldName: PreviousNode
+      _node: {fileID: -4640375615358675429}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: NextNode
+        node: {fileID: -7138757652546800438}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: NextNode
+      _node: {fileID: -4640375615358675429}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: PreviousNode
+        node: {fileID: -2123218782724513457}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  Active: 0
+  Next: {fileID: -2123218782724513457}
+  PreviousNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  NextNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  CharacterName: Narrator
+  Dialogue: Waktu berlalu dan semua mahasiswa telah selesai menjalani ujian semester
+    mereka
   Beep: 1
   BeepOnVowel: 0
   PitchShift: 0
   MaxPitch: 0
   BoopSoundEffect: {fileID: 8300000, guid: c8fa33de6006b874dbe76170f373dc23, type: 3}
   DialogueClip: {fileID: 0}
+--- !u!114 &-4479720788931649049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adabf642a00adb64f98845666fedcc5a, type: 3}
+  m_Name: Audio Dialogue Element
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 11192, y: -696}
+  ports:
+    keys:
+    - PreviousNode
+    - NextNode
+    values:
+    - _fieldName: PreviousNode
+      _node: {fileID: -4479720788931649049}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: NextNode
+        node: {fileID: -4960281336533156021}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: NextNode
+      _node: {fileID: -4479720788931649049}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: PreviousNode
+        node: {fileID: 5652647674014321275}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  Active: 0
+  Next: {fileID: 5652647674014321275}
+  PreviousNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  NextNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  CharacterName: Brenhan
+  Dialogue: 'Hehe biasa saja kok Evans dan Rangga. '
+  Beep: 1
+  BeepOnVowel: 0
+  PitchShift: 0
+  MaxPitch: 0
+  BoopSoundEffect: {fileID: 8300000, guid: c8fa33de6006b874dbe76170f373dc23, type: 3}
+  DialogueClip: {fileID: 0}
+--- !u!114 &-4455669974092988047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adabf642a00adb64f98845666fedcc5a, type: 3}
+  m_Name: Audio Dialogue Element
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 22200, y: -264}
+  ports:
+    keys:
+    - PreviousNode
+    - NextNode
+    values:
+    - _fieldName: PreviousNode
+      _node: {fileID: -4455669974092988047}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: NextNode
+        node: {fileID: 8659774904804774652}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: NextNode
+      _node: {fileID: -4455669974092988047}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: PreviousNode
+        node: {fileID: 1048497575071395081}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  Active: 0
+  Next: {fileID: 1048497575071395081}
+  PreviousNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  NextNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  CharacterName: Brenhan
+  Dialogue: Haduhhh kok nilaiku gk sesuai ekspektasi yahh, gimana inii T-T
+  Beep: 1
+  BeepOnVowel: 0
+  PitchShift: 0
+  MaxPitch: 0
+  BoopSoundEffect: {fileID: 8300000, guid: c8fa33de6006b874dbe76170f373dc23, type: 3}
+  DialogueClip: {fileID: 0}
+--- !u!114 &-4452533260710204689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adabf642a00adb64f98845666fedcc5a, type: 3}
+  m_Name: Audio Dialogue Element
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 19464, y: -856}
+  ports:
+    keys:
+    - PreviousNode
+    - NextNode
+    values:
+    - _fieldName: PreviousNode
+      _node: {fileID: -4452533260710204689}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: NextNode
+        node: {fileID: -5353916417591795106}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: NextNode
+      _node: {fileID: -4452533260710204689}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: PreviousNode
+        node: {fileID: 8385627609139050202}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  Active: 0
+  Next: {fileID: 8385627609139050202}
+  PreviousNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  NextNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  CharacterName: Brenhan
+  Dialogue: Ayukk Rangga kita belajar bareng
+  Beep: 1
+  BeepOnVowel: 0
+  PitchShift: 0
+  MaxPitch: 0
+  BoopSoundEffect: {fileID: 8300000, guid: c8fa33de6006b874dbe76170f373dc23, type: 3}
+  DialogueClip: {fileID: 0}
+--- !u!114 &-4347841974163663217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adabf642a00adb64f98845666fedcc5a, type: 3}
+  m_Name: Audio Dialogue Element
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 9480, y: 664}
+  ports:
+    keys:
+    - PreviousNode
+    - NextNode
+    values:
+    - _fieldName: PreviousNode
+      _node: {fileID: -4347841974163663217}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: NextNode
+        node: {fileID: 7583871586473082742}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: NextNode
+      _node: {fileID: -4347841974163663217}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: PreviousNode
+        node: {fileID: 3265720623145726910}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  Active: 0
+  Next: {fileID: 0}
+  PreviousNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  NextNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  CharacterName: Narrator
+  Dialogue: Tamat...
+  Beep: 1
+  BeepOnVowel: 0
+  PitchShift: 0
+  MaxPitch: 0
+  BoopSoundEffect: {fileID: 8300000, guid: c8fa33de6006b874dbe76170f373dc23, type: 3}
+  DialogueClip: {fileID: 0}
+--- !u!114 &-4319246424005568987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 477b8157536ff9a4e8bcfb67567fee30, type: 3}
+  m_Name: Change Sprite Element
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 5320, y: 344}
+  ports:
+    keys:
+    - PreviousNode
+    - NextNode
+    values:
+    - _fieldName: PreviousNode
+      _node: {fileID: -4319246424005568987}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: NextNode
+        node: {fileID: 3047374412578883765}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: NextNode
+      _node: {fileID: -4319246424005568987}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: PreviousNode
+        node: {fileID: -1970332319159359944}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  Active: 0
+  Next: {fileID: -1970332319159359944}
+  PreviousNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  NextNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  CharacterName: Nicho
+  NewSprite: {fileID: 21300000, guid: d8121f8255b9766428b82152979914ee, type: 3}
 --- !u!114 &-4264049251582985612
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -895,7 +1737,7 @@ MonoBehaviour:
   m_Name: Audio Dialogue Element
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 2136, y: -536}
+  position: {x: 3448, y: -584}
   ports:
     keys:
     - PreviousNode
@@ -951,8 +1793,74 @@ MonoBehaviour:
   BeepOnVowel: 0
   PitchShift: 0
   MaxPitch: 0
-  BoopSoundEffect: {fileID: 0}
+  BoopSoundEffect: {fileID: 8300000, guid: c8fa33de6006b874dbe76170f373dc23, type: 3}
   DialogueClip: {fileID: 0}
+--- !u!114 &-4226095786449666050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e69886790097bca409901d96bb3c0b2b, type: 3}
+  m_Name: Exit Scene Element
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 19912, y: -648}
+  ports:
+    keys:
+    - PreviousNode
+    - NextNode
+    values:
+    - _fieldName: PreviousNode
+      _node: {fileID: -4226095786449666050}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: NextNode
+        node: {fileID: -5694023821529771397}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: NextNode
+      _node: {fileID: -4226095786449666050}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: PreviousNode
+        node: {fileID: -3787119526791937572}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  Active: 0
+  Next: {fileID: -3787119526791937572}
+  PreviousNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  NextNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  CharacterName: Rangga
+  ExitPosition: 1
+  ExitTime: 1
 --- !u!114 &-4202814567086290832
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1015,6 +1923,77 @@ MonoBehaviour:
     _dynamic: 0
   StoryName: OpeningSequence
   IsRoot: 1
+--- !u!114 &-4016512735271832807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adabf642a00adb64f98845666fedcc5a, type: 3}
+  m_Name: Audio Dialogue Element
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 22296, y: -952}
+  ports:
+    keys:
+    - PreviousNode
+    - NextNode
+    values:
+    - _fieldName: PreviousNode
+      _node: {fileID: -4016512735271832807}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: NextNode
+        node: {fileID: 2535755050067135849}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: NextNode
+      _node: {fileID: -4016512735271832807}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: PreviousNode
+        node: {fileID: 6375271875300747646}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  Active: 0
+  Next: {fileID: 6375271875300747646}
+  PreviousNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  NextNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  CharacterName: Brenhan
+  Dialogue: Wahhh semua ujianku nilainya A, hehe asikk
+  Beep: 1
+  BeepOnVowel: 0
+  PitchShift: 0
+  MaxPitch: 0
+  BoopSoundEffect: {fileID: 8300000, guid: c8fa33de6006b874dbe76170f373dc23, type: 3}
+  DialogueClip: {fileID: 0}
 --- !u!114 &-4012461754703821481
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1028,7 +2007,7 @@ MonoBehaviour:
   m_Name: Change Sprite Element
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 3080, y: -424}
+  position: {x: 4728, y: -552}
   ports:
     keys:
     - PreviousNode
@@ -1093,7 +2072,7 @@ MonoBehaviour:
   m_Name: Change Background Element
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 11832, y: -616}
+  position: {x: 13752, y: -488}
   ports:
     keys:
     - PreviousNode
@@ -1124,7 +2103,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   Active: 0
-  Next: {fileID: 0}
+  Next: {fileID: 636324205256404527}
   PreviousNode:
     _fieldName: 
     _node: {fileID: 0}
@@ -1146,7 +2125,7 @@ MonoBehaviour:
   NewBackground: {fileID: 21300000, guid: c4e761e75afda0641a5c463af4cc24a3, type: 3}
   Fade: 1
   FadeTime: 1
---- !u!114 &-3599330920068850453
+--- !u!114 &-3972201525609761876
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1155,42 +2134,42 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31f75b66cbe889d4cb63a0a491cf5a3b, type: 3}
-  m_Name: Enter Scene Element
+  m_Script: {fileID: 11500000, guid: e69886790097bca409901d96bb3c0b2b, type: 3}
+  m_Name: Exit Scene Element
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 6376, y: 232}
+  position: {x: 19912, y: -376}
   ports:
     keys:
     - PreviousNode
     - NextNode
     values:
     - _fieldName: PreviousNode
-      _node: {fileID: -3599330920068850453}
+      _node: {fileID: -3972201525609761876}
       _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections:
       - fieldName: NextNode
-        node: {fileID: 5964938735606451206}
+        node: {fileID: -2173528282561941774}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: NextNode
-      _node: {fileID: -3599330920068850453}
+      _node: {fileID: -3972201525609761876}
       _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections:
       - fieldName: PreviousNode
-        node: {fileID: 426794231324701066}
+        node: {fileID: 852078809891245415}
         reroutePoints: []
       _direction: 1
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
   Active: 0
-  Next: {fileID: 426794231324701066}
+  Next: {fileID: 852078809891245415}
   PreviousNode:
     _fieldName: 
     _node: {fileID: 0}
@@ -1209,12 +2188,218 @@ MonoBehaviour:
     _connectionType: 0
     _typeConstraint: 0
     _dynamic: 0
-  CharacterName: Dummy_02
-  Character: {fileID: 21300000, guid: 4bedf33a50e1cb049b6c13d6026399e1, type: 3}
-  Flip: 0
-  EnterFromDirection: 3
-  FinalPosition: 1
-  EnterTime: 2
+  CharacterName: Brenhan
+  ExitPosition: 0
+  ExitTime: 1
+--- !u!114 &-3877059007464953636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adabf642a00adb64f98845666fedcc5a, type: 3}
+  m_Name: Audio Dialogue Element
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 22968, y: -920}
+  ports:
+    keys:
+    - PreviousNode
+    - NextNode
+    values:
+    - _fieldName: PreviousNode
+      _node: {fileID: -3877059007464953636}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: NextNode
+        node: {fileID: 6375271875300747646}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: NextNode
+      _node: {fileID: -3877059007464953636}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: PreviousNode
+        node: {fileID: 255884088687959799}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  Active: 0
+  Next: {fileID: 255884088687959799}
+  PreviousNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  NextNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  CharacterName: Evans
+  Dialogue: Wihh selamat yah Brenhan, nilaiku juga A semua nih berkat belajar bareng
+    kita
+  Beep: 1
+  BeepOnVowel: 0
+  PitchShift: 0
+  MaxPitch: 0
+  BoopSoundEffect: {fileID: 8300000, guid: c8fa33de6006b874dbe76170f373dc23, type: 3}
+  DialogueClip: {fileID: 0}
+--- !u!114 &-3787119526791937572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61fe714cebce5fe4ba0b71d53f36fade, type: 3}
+  m_Name: Change Background Element
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 20328, y: -1016}
+  ports:
+    keys:
+    - PreviousNode
+    - NextNode
+    values:
+    - _fieldName: PreviousNode
+      _node: {fileID: -3787119526791937572}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: NextNode
+        node: {fileID: -4226095786449666050}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: NextNode
+      _node: {fileID: -3787119526791937572}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: PreviousNode
+        node: {fileID: 8731290610620534054}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  Active: 0
+  Next: {fileID: 8731290610620534054}
+  PreviousNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  NextNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  NewBackground: {fileID: 21300000, guid: c29ee73d0b32b3f44a76639c35135eb6, type: 3}
+  Fade: 1
+  FadeTime: 1
+--- !u!114 &-3604448882765655566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adabf642a00adb64f98845666fedcc5a, type: 3}
+  m_Name: Audio Dialogue Element
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 4120, y: 344}
+  ports:
+    keys:
+    - PreviousNode
+    - NextNode
+    values:
+    - _fieldName: PreviousNode
+      _node: {fileID: -3604448882765655566}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: NextNode
+        node: {fileID: 773347753657875058}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: NextNode
+      _node: {fileID: -3604448882765655566}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: PreviousNode
+        node: {fileID: -484826832934215027}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  Active: 0
+  Next: {fileID: -484826832934215027}
+  PreviousNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  NextNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  CharacterName: Nicho
+  Dialogue: Kok bapak bisa tau saya?
+  Beep: 1
+  BeepOnVowel: 0
+  PitchShift: 0
+  MaxPitch: 0
+  BoopSoundEffect: {fileID: 8300000, guid: c8fa33de6006b874dbe76170f373dc23, type: 3}
+  DialogueClip: {fileID: 0}
 --- !u!114 &-3333267823494408273
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1228,7 +2413,7 @@ MonoBehaviour:
   m_Name: Audio Dialogue Element
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 5160, y: -520}
+  position: {x: 6744, y: -616}
   ports:
     keys:
     - PreviousNode
@@ -1279,7 +2464,7 @@ MonoBehaviour:
     _typeConstraint: 0
     _dynamic: 0
   CharacterName: Rangga
-  Dialogue: Betul itu, jan membully anak baru
+  Dialogue: Betul itu Nicho, jangan membully anak baru
   Beep: 1
   BeepOnVowel: 0
   PitchShift: 0
@@ -1299,7 +2484,7 @@ MonoBehaviour:
   m_Name: Audio Dialogue Element
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 4344, y: -536}
+  position: {x: 5976, y: -584}
   ports:
     keys:
     - PreviousNode
@@ -1350,7 +2535,7 @@ MonoBehaviour:
     _typeConstraint: 0
     _dynamic: 0
   CharacterName: Evans
-  Dialogue: Hei nico, kamu tidak boleh membully anak baru, aku adukan kamu ke dosen
+  Dialogue: Hei Nicho, kamu tidak boleh membully anak baru, aku adukan kamu ke dosen
     yah!
   Beep: 1
   BeepOnVowel: 1
@@ -1358,7 +2543,7 @@ MonoBehaviour:
   MaxPitch: 0.2
   BoopSoundEffect: {fileID: 8300000, guid: c8fa33de6006b874dbe76170f373dc23, type: 3}
   DialogueClip: {fileID: 0}
---- !u!114 &-2963486305234654957
+--- !u!114 &-2899058501203749462
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1367,78 +2552,42 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e5078e2883b71e7438a5d965f15f77c8, type: 3}
-  m_Name: Choice Element
+  m_Script: {fileID: 11500000, guid: adabf642a00adb64f98845666fedcc5a, type: 3}
+  m_Name: Audio Dialogue Element
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 9096, y: -8}
+  position: {x: 18664, y: -328}
   ports:
     keys:
     - PreviousNode
     - NextNode
-    - Choice0
-    - Choice1
-    - Choice2
     values:
     - _fieldName: PreviousNode
-      _node: {fileID: -2963486305234654957}
+      _node: {fileID: -2899058501203749462}
       _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections:
-      - fieldName: NextNode
-        node: {fileID: -1522815258023470846}
+      - fieldName: Choice1
+        node: {fileID: -1768207896223625835}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: NextNode
-      _node: {fileID: -2963486305234654957}
+      _node: {fileID: -2899058501203749462}
       _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
-      connections: []
+      connections:
+      - fieldName: PreviousNode
+        node: {fileID: -8273751858683272472}
+        reroutePoints: []
       _direction: 1
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
-    - _fieldName: Choice0
-      _node: {fileID: -2963486305234654957}
-      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections:
-      - fieldName: PreviousNode
-        node: {fileID: 299300065002464599}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 1
-      _typeConstraint: 1
-      _dynamic: 1
-    - _fieldName: Choice1
-      _node: {fileID: -2963486305234654957}
-      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections:
-      - fieldName: PreviousNode
-        node: {fileID: 299300065002464599}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 1
-      _typeConstraint: 1
-      _dynamic: 1
-    - _fieldName: Choice2
-      _node: {fileID: -2963486305234654957}
-      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections:
-      - fieldName: PreviousNode
-        node: {fileID: 299300065002464599}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 1
-      _typeConstraint: 1
-      _dynamic: 1
   Active: 0
-  Next: {fileID: 0}
+  Next: {fileID: -8273751858683272472}
   PreviousNode:
     _fieldName: 
     _node: {fileID: 0}
@@ -1457,13 +2606,15 @@ MonoBehaviour:
     _connectionType: 0
     _typeConstraint: 0
     _dynamic: 0
-  Choices:
-  - Option 1
-  - Vote this to yeet Velorexe off the earth.
-  - Option 3
-  ShuffleChocies: 1
-  HideDialogue: 0
---- !u!114 &-2829197401580914606
+  CharacterName: Brenhan
+  Dialogue: Boleh, maaf yah Evans kayaknya kita belajarnya kapan kapan aja
+  Beep: 1
+  BeepOnVowel: 0
+  PitchShift: 0
+  MaxPitch: 0
+  BoopSoundEffect: {fileID: 8300000, guid: c8fa33de6006b874dbe76170f373dc23, type: 3}
+  DialogueClip: {fileID: 0}
+--- !u!114 &-2798654556817186916
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1472,42 +2623,42 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e69886790097bca409901d96bb3c0b2b, type: 3}
-  m_Name: Exit Scene Element
+  m_Script: {fileID: 11500000, guid: 61fe714cebce5fe4ba0b71d53f36fade, type: 3}
+  m_Name: Change Background Element
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 7096, y: 312}
+  position: {x: 1432, y: 392}
   ports:
     keys:
     - PreviousNode
     - NextNode
     values:
     - _fieldName: PreviousNode
-      _node: {fileID: -2829197401580914606}
+      _node: {fileID: -2798654556817186916}
       _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections:
       - fieldName: NextNode
-        node: {fileID: 6472896098518316389}
+        node: {fileID: 7980158708561704369}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: NextNode
-      _node: {fileID: -2829197401580914606}
+      _node: {fileID: -2798654556817186916}
       _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections:
       - fieldName: PreviousNode
-        node: {fileID: 1924711864495957666}
+        node: {fileID: 739439216791182318}
         reroutePoints: []
       _direction: 1
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
   Active: 0
-  Next: {fileID: 1924711864495957666}
+  Next: {fileID: 739439216791182318}
   PreviousNode:
     _fieldName: 
     _node: {fileID: 0}
@@ -1526,9 +2677,9 @@ MonoBehaviour:
     _connectionType: 0
     _typeConstraint: 0
     _dynamic: 0
-  CharacterName: Dummy_03
-  ExitPosition: 1
-  ExitTime: 1.4
+  NewBackground: {fileID: 21300000, guid: da27accd22cf7d7478d88d32e841f8b4, type: 3}
+  Fade: 1
+  FadeTime: 2
 --- !u!114 &-2644169627960247458
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1542,7 +2693,7 @@ MonoBehaviour:
   m_Name: Enter Scene Element
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 1976, y: -184}
+  position: {x: 3048, y: -584}
   ports:
     keys:
     - PreviousNode
@@ -1611,7 +2762,7 @@ MonoBehaviour:
   m_Name: Enter Scene Element
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 14392, y: -760}
+  position: {x: 16344, y: -648}
   ports:
     keys:
     - PreviousNode
@@ -1642,7 +2793,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   Active: 0
-  Next: {fileID: 0}
+  Next: {fileID: -1511797819677012893}
   PreviousNode:
     _fieldName: 
     _node: {fileID: 0}
@@ -1667,6 +2818,68 @@ MonoBehaviour:
   EnterFromDirection: 2
   FinalPosition: 2
   EnterTime: 2
+--- !u!114 &-2600975054793003665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 477b8157536ff9a4e8bcfb67567fee30, type: 3}
+  m_Name: Change Sprite Element
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 6984, y: 216}
+  ports:
+    keys:
+    - PreviousNode
+    - NextNode
+    values:
+    - _fieldName: PreviousNode
+      _node: {fileID: -2600975054793003665}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: NextNode
+      _node: {fileID: -2600975054793003665}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: PreviousNode
+        node: {fileID: 4688955043436181942}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  Active: 0
+  Next: {fileID: 4688955043436181942}
+  PreviousNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  NextNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  CharacterName: Nicho
+  NewSprite: {fileID: 21300000, guid: ee58d37cd184bad4db5512ea7ec24c34, type: 3}
 --- !u!114 &-2355158659119348948
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1680,7 +2893,7 @@ MonoBehaviour:
   m_Name: Audio Dialogue Element
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 12696, y: -696}
+  position: {x: 14616, y: -584}
   ports:
     keys:
     - PreviousNode
@@ -1711,7 +2924,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   Active: 0
-  Next: {fileID: 0}
+  Next: {fileID: -5765755265255397716}
   PreviousNode:
     _fieldName: 
     _node: {fileID: 0}
@@ -1736,7 +2949,7 @@ MonoBehaviour:
   BeepOnVowel: 0
   PitchShift: 0
   MaxPitch: 0
-  BoopSoundEffect: {fileID: 0}
+  BoopSoundEffect: {fileID: 8300000, guid: c8fa33de6006b874dbe76170f373dc23, type: 3}
   DialogueClip: {fileID: 0}
 --- !u!114 &-2345376719665526268
 MonoBehaviour:
@@ -1751,7 +2964,7 @@ MonoBehaviour:
   m_Name: Audio Dialogue Element
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 8360, y: -440}
+  position: {x: 9736, y: -568}
   ports:
     keys:
     - PreviousNode
@@ -1802,14 +3015,14 @@ MonoBehaviour:
     _typeConstraint: 0
     _dynamic: 0
   CharacterName: Brenhan
-  Dialogue: Iya aku tidak apa-apa terimakasih ya evan dan rangga, kenalin aku brenhan
+  Dialogue: Iya aku tidak apa-apa terimakasih ya Evan dan Rangga, kenalin aku Brenhan
   Beep: 1
   BeepOnVowel: 0
   PitchShift: 0
   MaxPitch: 0
   BoopSoundEffect: {fileID: 8300000, guid: c8fa33de6006b874dbe76170f373dc23, type: 3}
   DialogueClip: {fileID: 0}
---- !u!114 &-2260763046560012262
+--- !u!114 &-2173528282561941774
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1818,42 +3031,42 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 477b8157536ff9a4e8bcfb67567fee30, type: 3}
-  m_Name: Change Sprite Element
+  m_Script: {fileID: 11500000, guid: adabf642a00adb64f98845666fedcc5a, type: 3}
+  m_Name: Audio Dialogue Element
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 5688, y: -8}
+  position: {x: 19464, y: -328}
   ports:
     keys:
     - PreviousNode
     - NextNode
     values:
     - _fieldName: PreviousNode
-      _node: {fileID: -2260763046560012262}
+      _node: {fileID: -2173528282561941774}
       _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections:
       - fieldName: NextNode
-        node: {fileID: 5032050557008875230}
+        node: {fileID: -8273751858683272472}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: NextNode
-      _node: {fileID: -2260763046560012262}
+      _node: {fileID: -2173528282561941774}
       _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections:
       - fieldName: PreviousNode
-        node: {fileID: -6584678925603748989}
+        node: {fileID: -3972201525609761876}
         reroutePoints: []
       _direction: 1
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
   Active: 0
-  Next: {fileID: -6584678925603748989}
+  Next: {fileID: -3972201525609761876}
   PreviousNode:
     _fieldName: 
     _node: {fileID: 0}
@@ -1872,8 +3085,85 @@ MonoBehaviour:
     _connectionType: 0
     _typeConstraint: 0
     _dynamic: 0
-  CharacterName: Velorexe
-  NewSprite: {fileID: 21300000, guid: 1cdd78d85483bfb41892664f40affae2, type: 3}
+  CharacterName: Brenhan
+  Dialogue: Okeee Evans
+  Beep: 1
+  BeepOnVowel: 0
+  PitchShift: 0
+  MaxPitch: 0
+  BoopSoundEffect: {fileID: 8300000, guid: c8fa33de6006b874dbe76170f373dc23, type: 3}
+  DialogueClip: {fileID: 0}
+--- !u!114 &-2123218782724513457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adabf642a00adb64f98845666fedcc5a, type: 3}
+  m_Name: Audio Dialogue Element
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 21064, y: -232}
+  ports:
+    keys:
+    - PreviousNode
+    - NextNode
+    values:
+    - _fieldName: PreviousNode
+      _node: {fileID: -2123218782724513457}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: NextNode
+        node: {fileID: -4640375615358675429}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: NextNode
+      _node: {fileID: -2123218782724513457}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: PreviousNode
+        node: {fileID: -7761332632749385518}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  Active: 0
+  Next: {fileID: -7761332632749385518}
+  PreviousNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  NextNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  CharacterName: Narrator
+  Dialogue: Tiba saatnya pembagian nilai ujian
+  Beep: 1
+  BeepOnVowel: 0
+  PitchShift: 0
+  MaxPitch: 0
+  BoopSoundEffect: {fileID: 8300000, guid: c8fa33de6006b874dbe76170f373dc23, type: 3}
+  DialogueClip: {fileID: 0}
 --- !u!114 &-2022572691547937303
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1887,7 +3177,7 @@ MonoBehaviour:
   m_Name: Enter Scene Element
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 1352, y: -56}
+  position: {x: 1560, y: -248}
   ports:
     keys:
     - PreviousNode
@@ -1943,6 +3233,148 @@ MonoBehaviour:
   EnterFromDirection: 0
   FinalPosition: 0
   EnterTime: 2
+--- !u!114 &-1970332319159359944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adabf642a00adb64f98845666fedcc5a, type: 3}
+  m_Name: Audio Dialogue Element
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 5832, y: 488}
+  ports:
+    keys:
+    - PreviousNode
+    - NextNode
+    values:
+    - _fieldName: PreviousNode
+      _node: {fileID: -1970332319159359944}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: NextNode
+        node: {fileID: -4319246424005568987}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: NextNode
+      _node: {fileID: -1970332319159359944}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: PreviousNode
+        node: {fileID: 7329309708168775159}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  Active: 0
+  Next: {fileID: 7329309708168775159}
+  PreviousNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  NextNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  CharacterName: Nicho
+  Dialogue: Maaf pak, saya sangat menyesal dulu pernah memalak bapak
+  Beep: 1
+  BeepOnVowel: 0
+  PitchShift: 0
+  MaxPitch: 0
+  BoopSoundEffect: {fileID: 8300000, guid: c8fa33de6006b874dbe76170f373dc23, type: 3}
+  DialogueClip: {fileID: 0}
+--- !u!114 &-1865531538815950089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adabf642a00adb64f98845666fedcc5a, type: 3}
+  m_Name: Audio Dialogue Element
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 7784, y: 600}
+  ports:
+    keys:
+    - PreviousNode
+    - NextNode
+    values:
+    - _fieldName: PreviousNode
+      _node: {fileID: -1865531538815950089}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: NextNode
+        node: {fileID: 8712895123817620987}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: NextNode
+      _node: {fileID: -1865531538815950089}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: PreviousNode
+        node: {fileID: 2783067641319288440}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  Active: 0
+  Next: {fileID: 2783067641319288440}
+  PreviousNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  NextNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  CharacterName: Brenhan
+  Dialogue: Saya nantikan performa kamu diperusahaan saya
+  Beep: 1
+  BeepOnVowel: 0
+  PitchShift: 0
+  MaxPitch: 0
+  BoopSoundEffect: {fileID: 8300000, guid: c8fa33de6006b874dbe76170f373dc23, type: 3}
+  DialogueClip: {fileID: 0}
 --- !u!114 &-1807740220486974240
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1956,7 +3388,7 @@ MonoBehaviour:
   m_Name: Audio Dialogue Element
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 9224, y: -424}
+  position: {x: 10488, y: -664}
   ports:
     keys:
     - PreviousNode
@@ -1980,14 +3412,14 @@ MonoBehaviour:
         PublicKeyToken=null
       connections:
       - fieldName: PreviousNode
-        node: {fileID: -4479720788931649049}
+        node: {fileID: -4960281336533156021}
         reroutePoints: []
       _direction: 1
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
   Active: 0
-  Next: {fileID: -4479720788931649049}
+  Next: {fileID: -4960281336533156021}
   PreviousNode:
     _fieldName: 
     _node: {fileID: 0}
@@ -2007,7 +3439,7 @@ MonoBehaviour:
     _typeConstraint: 0
     _dynamic: 0
   CharacterName: Rangga
-  Dialogue: Wihh benarkah? keren banget kamu brenhan
+  Dialogue: Wihh benarkah? keren banget kamu Brenhan
   Beep: 1
   BeepOnVowel: 0
   PitchShift: 0
@@ -2027,7 +3459,7 @@ MonoBehaviour:
   m_Name: Change Background Element
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 312, y: -248}
+  position: {x: 440, y: -40}
   ports:
     keys:
     - PreviousNode
@@ -2080,7 +3512,7 @@ MonoBehaviour:
   NewBackground: {fileID: 21300000, guid: c29ee73d0b32b3f44a76639c35135eb6, type: 3}
   Fade: 1
   FadeTime: 1
---- !u!114 &-1522815258023470846
+--- !u!114 &-1768207896223625835
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2089,42 +3521,65 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a3c599ddc9a1b854f85859c7762a12fb, type: 3}
-  m_Name: Dialogue Element
+  m_Script: {fileID: 11500000, guid: e5078e2883b71e7438a5d965f15f77c8, type: 3}
+  m_Name: Choice Element
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 8776, y: -8}
+  position: {x: 18056, y: -600}
   ports:
     keys:
     - PreviousNode
     - NextNode
+    - Choice1
+    - Choice0
     values:
     - _fieldName: PreviousNode
-      _node: {fileID: -1522815258023470846}
+      _node: {fileID: -1768207896223625835}
       _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections:
       - fieldName: NextNode
-        node: {fileID: -8880530026178415489}
+        node: {fileID: 4151174159995227328}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: NextNode
-      _node: {fileID: -1522815258023470846}
+      _node: {fileID: -1768207896223625835}
       _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
-      connections:
-      - fieldName: PreviousNode
-        node: {fileID: -2963486305234654957}
-        reroutePoints: []
+      connections: []
       _direction: 1
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
+    - _fieldName: Choice1
+      _node: {fileID: -1768207896223625835}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: PreviousNode
+        node: {fileID: -2899058501203749462}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 1
+      _dynamic: 1
+    - _fieldName: Choice0
+      _node: {fileID: -1768207896223625835}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: PreviousNode
+        node: {fileID: -8713951812717616101}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 1
+      _dynamic: 1
   Active: 0
-  Next: {fileID: -2963486305234654957}
+  Next: {fileID: 0}
   PreviousNode:
     _fieldName: 
     _node: {fileID: 0}
@@ -2143,9 +3598,11 @@ MonoBehaviour:
     _connectionType: 0
     _typeConstraint: 0
     _dynamic: 0
-  CharacterName: Velorexe
-  Dialogue: Like choices! Every choice has it's own outcome, which can be connected
-    to any node of your choice.
+  Choices:
+  - Pilih Mabar
+  - Pilih Belajar
+  ShuffleChocies: 0
+  HideDialogue: 1
 --- !u!114 &-1511797819677012893
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2159,7 +3616,7 @@ MonoBehaviour:
   m_Name: Audio Dialogue Element
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 14824, y: -760}
+  position: {x: 16808, y: -648}
   ports:
     keys:
     - PreviousNode
@@ -2190,7 +3647,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   Active: 0
-  Next: {fileID: 0}
+  Next: {fileID: 8683764935995393642}
   PreviousNode:
     _fieldName: 
     _node: {fileID: 0}
@@ -2210,79 +3667,13 @@ MonoBehaviour:
     _typeConstraint: 0
     _dynamic: 0
   CharacterName: Rangga
-  Dialogue: Eh brenhan, mau ikut partyku push rank game gk?
+  Dialogue: "Eh\u2026 Brenhan, mau ikut partyku push rank game gak?"
   Beep: 1
   BeepOnVowel: 0
   PitchShift: 1
   MaxPitch: 0
-  BoopSoundEffect: {fileID: 0}
+  BoopSoundEffect: {fileID: 8300000, guid: c8fa33de6006b874dbe76170f373dc23, type: 3}
   DialogueClip: {fileID: 0}
---- !u!114 &-1398034605684631682
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a3c599ddc9a1b854f85859c7762a12fb, type: 3}
-  m_Name: Dialogue Element
-  m_EditorClassIdentifier: 
-  graph: {fileID: 11400000}
-  position: {x: 10072, y: 8}
-  ports:
-    keys:
-    - PreviousNode
-    - NextNode
-    values:
-    - _fieldName: PreviousNode
-      _node: {fileID: -1398034605684631682}
-      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections:
-      - fieldName: NextNode
-        node: {fileID: 7384384192375087222}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: NextNode
-      _node: {fileID: -1398034605684631682}
-      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections:
-      - fieldName: PreviousNode
-        node: {fileID: -7543352829120350252}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
-  Active: 0
-  Next: {fileID: -7543352829120350252}
-  PreviousNode:
-    _fieldName: 
-    _node: {fileID: 0}
-    _typeQualifiedName: 
-    connections: []
-    _direction: 0
-    _connectionType: 0
-    _typeConstraint: 0
-    _dynamic: 0
-  NextNode:
-    _fieldName: 
-    _node: {fileID: 0}
-    _typeQualifiedName: 
-    connections: []
-    _direction: 0
-    _connectionType: 0
-    _typeConstraint: 0
-    _dynamic: 0
-  CharacterName: Velorexe
-  Dialogue: If you want a full list of all the elements you can use, you can open
-    the UVNFStoryElements window in the UVNF tab.
 --- !u!114 &-507391716479804158
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2296,7 +3687,7 @@ MonoBehaviour:
   m_Name: Change Background Element
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 968, y: -8}
+  position: {x: 1176, y: -200}
   ports:
     keys:
     - PreviousNode
@@ -2349,7 +3740,7 @@ MonoBehaviour:
   NewBackground: {fileID: 21300000, guid: e9fc4cc269e188942b0cf2a6c595b7f5, type: 3}
   Fade: 1
   FadeTime: 1
---- !u!114 &-117251844290693304
+--- !u!114 &-484826832934215027
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2358,42 +3749,42 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 186519c80b988364fba5cea0c54f9e49, type: 3}
-  m_Name: Wait Element
+  m_Script: {fileID: 11500000, guid: 477b8157536ff9a4e8bcfb67567fee30, type: 3}
+  m_Name: Change Sprite Element
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 6760, y: -8}
+  position: {x: 4504, y: 344}
   ports:
     keys:
     - PreviousNode
     - NextNode
     values:
     - _fieldName: PreviousNode
-      _node: {fileID: -117251844290693304}
+      _node: {fileID: -484826832934215027}
       _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections:
       - fieldName: NextNode
-        node: {fileID: 426794231324701066}
+        node: {fileID: -3604448882765655566}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: NextNode
-      _node: {fileID: -117251844290693304}
+      _node: {fileID: -484826832934215027}
       _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections:
       - fieldName: PreviousNode
-        node: {fileID: -5583132717968379321}
+        node: {fileID: 3047374412578883765}
         reroutePoints: []
       _direction: 1
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
   Active: 0
-  Next: {fileID: -5583132717968379321}
+  Next: {fileID: 3047374412578883765}
   PreviousNode:
     _fieldName: 
     _node: {fileID: 0}
@@ -2412,7 +3803,8 @@ MonoBehaviour:
     _connectionType: 0
     _typeConstraint: 0
     _dynamic: 0
-  WaitTime: 2
+  CharacterName: Brenhan
+  NewSprite: {fileID: 21300000, guid: 6e87ad3c6517e0941ae9685495ec33c6, type: 3}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2432,29 +3824,6 @@ MonoBehaviour:
   - {fileID: -6664353289656554294}
   - {fileID: 7487686641615215702}
   - {fileID: -3167965086892119289}
-  - {fileID: 5032050557008875230}
-  - {fileID: -2260763046560012262}
-  - {fileID: -6584678925603748989}
-  - {fileID: 5964938735606451206}
-  - {fileID: -3599330920068850453}
-  - {fileID: 426794231324701066}
-  - {fileID: -5583132717968379321}
-  - {fileID: 6472896098518316389}
-  - {fileID: -2829197401580914606}
-  - {fileID: 1062457426058270779}
-  - {fileID: 1924711864495957666}
-  - {fileID: -6837374074360815640}
-  - {fileID: -8880530026178415489}
-  - {fileID: -1522815258023470846}
-  - {fileID: -2963486305234654957}
-  - {fileID: 299300065002464599}
-  - {fileID: -117251844290693304}
-  - {fileID: 7384384192375087222}
-  - {fileID: -1398034605684631682}
-  - {fileID: -7543352829120350252}
-  - {fileID: -7925866276808309983}
-  - {fileID: 7815111530212063091}
-  - {fileID: 3964138587138135276}
   - {fileID: 5270346473795117227}
   - {fileID: 1669492557889037782}
   - {fileID: -1795968798739571845}
@@ -2494,9 +3863,81 @@ MonoBehaviour:
   - {fileID: 8542142543918372952}
   - {fileID: 8683764935995393642}
   - {fileID: 4151174159995227328}
+  - {fileID: -1768207896223625835}
+  - {fileID: -8713951812717616101}
+  - {fileID: -5353916417591795106}
+  - {fileID: -4452533260710204689}
+  - {fileID: -2899058501203749462}
+  - {fileID: -8273751858683272472}
+  - {fileID: -2173528282561941774}
+  - {fileID: -3787119526791937572}
+  - {fileID: 8731290610620534054}
+  - {fileID: 8385627609139050202}
+  - {fileID: -5694023821529771397}
+  - {fileID: -4226095786449666050}
+  - {fileID: 4512040306052948238}
+  - {fileID: 2535755050067135849}
+  - {fileID: -4016512735271832807}
+  - {fileID: -3877059007464953636}
+  - {fileID: 6375271875300747646}
+  - {fileID: 255884088687959799}
+  - {fileID: 5179100305766523702}
+  - {fileID: 4735275333020133127}
+  - {fileID: -7569021140806377174}
+  - {fileID: -3972201525609761876}
+  - {fileID: 852078809891245415}
+  - {fileID: 7695958944125029517}
+  - {fileID: -7138757652546800438}
+  - {fileID: -4640375615358675429}
+  - {fileID: -2123218782724513457}
+  - {fileID: 8659774904804774652}
+  - {fileID: -7761332632749385518}
+  - {fileID: -4455669974092988047}
+  - {fileID: 6146185006663411779}
+  - {fileID: -6981931894936851312}
+  - {fileID: 6133128419032258687}
+  - {fileID: 7980158708561704369}
+  - {fileID: -2798654556817186916}
+  - {fileID: 5842048289643196555}
+  - {fileID: 739439216791182318}
+  - {fileID: -8018070471083523046}
+  - {fileID: 507003638877126041}
+  - {fileID: -3604448882765655566}
+  - {fileID: 773347753657875058}
+  - {fileID: 3047374412578883765}
+  - {fileID: -4319246424005568987}
+  - {fileID: -1970332319159359944}
+  - {fileID: 7329309708168775159}
+  - {fileID: 5660813780440206128}
+  - {fileID: -484826832934215027}
+  - {fileID: 6046208505807656131}
+  - {fileID: 8712895123817620987}
+  - {fileID: 4468268177828170441}
+  - {fileID: -1865531538815950089}
+  - {fileID: 7583871586473082742}
+  - {fileID: 998866305112232276}
+  - {fileID: -7229465601492288989}
+  - {fileID: 2783067641319288440}
+  - {fileID: 752199792074477770}
+  - {fileID: 4688955043436181942}
+  - {fileID: -2600975054793003665}
+  - {fileID: -7339929055468810970}
+  - {fileID: 8194312446476994431}
+  - {fileID: 3299889846295126473}
+  - {fileID: 6975128327553070621}
+  - {fileID: 5652647674014321275}
+  - {fileID: -4960281336533156021}
+  - {fileID: 761547030029457639}
+  - {fileID: -4347841974163663217}
+  - {fileID: 1048497575071395081}
+  - {fileID: 5882214817497998446}
+  - {fileID: -5343891650230754450}
+  - {fileID: 258446910205005845}
+  - {fileID: 6140670441463795755}
+  - {fileID: 3265720623145726910}
   StoryNames:
   - Brenhan Story
---- !u!114 &299300065002464599
+--- !u!114 &255884088687959799
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2505,113 +3946,42 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a3c599ddc9a1b854f85859c7762a12fb, type: 3}
-  m_Name: Dialogue Element
+  m_Script: {fileID: 11500000, guid: adabf642a00adb64f98845666fedcc5a, type: 3}
+  m_Name: Audio Dialogue Element
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 9432, y: 8}
+  position: {x: 23352, y: -920}
   ports:
     keys:
     - PreviousNode
     - NextNode
     values:
     - _fieldName: PreviousNode
-      _node: {fileID: 299300065002464599}
-      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections:
-      - fieldName: Choice0
-        node: {fileID: -2963486305234654957}
-        reroutePoints: []
-      - fieldName: Choice1
-        node: {fileID: -2963486305234654957}
-        reroutePoints: []
-      - fieldName: Choice2
-        node: {fileID: -2963486305234654957}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: NextNode
-      _node: {fileID: 299300065002464599}
-      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections:
-      - fieldName: PreviousNode
-        node: {fileID: 7384384192375087222}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
-  Active: 0
-  Next: {fileID: 7384384192375087222}
-  PreviousNode:
-    _fieldName: 
-    _node: {fileID: 0}
-    _typeQualifiedName: 
-    connections: []
-    _direction: 0
-    _connectionType: 0
-    _typeConstraint: 0
-    _dynamic: 0
-  NextNode:
-    _fieldName: 
-    _node: {fileID: 0}
-    _typeQualifiedName: 
-    connections: []
-    _direction: 0
-    _connectionType: 0
-    _typeConstraint: 0
-    _dynamic: 0
-  CharacterName: Velorexe
-  Dialogue: Or in this case all end in the same end choice.
---- !u!114 &426794231324701066
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31f75b66cbe889d4cb63a0a491cf5a3b, type: 3}
-  m_Name: Enter Scene Element
-  m_EditorClassIdentifier: 
-  graph: {fileID: 11400000}
-  position: {x: 6376, y: 472}
-  ports:
-    keys:
-    - PreviousNode
-    - NextNode
-    values:
-    - _fieldName: PreviousNode
-      _node: {fileID: 426794231324701066}
+      _node: {fileID: 255884088687959799}
       _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections:
       - fieldName: NextNode
-        node: {fileID: -3599330920068850453}
+        node: {fileID: -3877059007464953636}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: NextNode
-      _node: {fileID: 426794231324701066}
+      _node: {fileID: 255884088687959799}
       _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections:
       - fieldName: PreviousNode
-        node: {fileID: -117251844290693304}
+        node: {fileID: 5179100305766523702}
         reroutePoints: []
       _direction: 1
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
   Active: 0
-  Next: {fileID: -117251844290693304}
+  Next: {fileID: 5179100305766523702}
   PreviousNode:
     _fieldName: 
     _node: {fileID: 0}
@@ -2630,12 +4000,151 @@ MonoBehaviour:
     _connectionType: 0
     _typeConstraint: 0
     _dynamic: 0
-  CharacterName: Dummy_03
-  Character: {fileID: 21300000, guid: 895742d32a0c74b4e97ab3560ceb40b2, type: 3}
-  Flip: 0
-  EnterFromDirection: 0
-  FinalPosition: 1
-  EnterTime: 2
+  CharacterName: Brenhan
+  Dialogue: Hehe iyaa nih, terima kasih yah sudah mengajakku belajar
+  Beep: 1
+  BeepOnVowel: 0
+  PitchShift: 0
+  MaxPitch: 0
+  BoopSoundEffect: {fileID: 8300000, guid: c8fa33de6006b874dbe76170f373dc23, type: 3}
+  DialogueClip: {fileID: 0}
+--- !u!114 &258446910205005845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e69886790097bca409901d96bb3c0b2b, type: 3}
+  m_Name: Exit Scene Element
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -744, y: 504}
+  ports:
+    keys:
+    - PreviousNode
+    - NextNode
+    values:
+    - _fieldName: PreviousNode
+      _node: {fileID: 258446910205005845}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: NextNode
+        node: {fileID: -5343891650230754450}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: NextNode
+      _node: {fileID: 258446910205005845}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: PreviousNode
+        node: {fileID: 5882214817497998446}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  Active: 0
+  Next: {fileID: 5882214817497998446}
+  PreviousNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  NextNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  CharacterName: Evans
+  ExitPosition: 1
+  ExitTime: 1
+--- !u!114 &507003638877126041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adabf642a00adb64f98845666fedcc5a, type: 3}
+  m_Name: Audio Dialogue Element
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 3352, y: 376}
+  ports:
+    keys:
+    - PreviousNode
+    - NextNode
+    values:
+    - _fieldName: PreviousNode
+      _node: {fileID: 507003638877126041}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: NextNode
+        node: {fileID: 5660813780440206128}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: NextNode
+      _node: {fileID: 507003638877126041}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: PreviousNode
+        node: {fileID: 773347753657875058}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  Active: 0
+  Next: {fileID: 773347753657875058}
+  PreviousNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  NextNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  CharacterName: Brenhan
+  Dialogue: Iyaa silahkan, loh kamu nico yah?
+  Beep: 1
+  BeepOnVowel: 0
+  PitchShift: 0
+  MaxPitch: 0
+  BoopSoundEffect: {fileID: 8300000, guid: c8fa33de6006b874dbe76170f373dc23, type: 3}
+  DialogueClip: {fileID: 0}
 --- !u!114 &636324205256404527
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2649,7 +4158,7 @@ MonoBehaviour:
   m_Name: Enter Scene Element
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 12264, y: -648}
+  position: {x: 14200, y: -520}
   ports:
     keys:
     - PreviousNode
@@ -2680,7 +4189,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   Active: 0
-  Next: {fileID: 0}
+  Next: {fileID: -2355158659119348948}
   PreviousNode:
     _fieldName: 
     _node: {fileID: 0}
@@ -2705,7 +4214,7 @@ MonoBehaviour:
   EnterFromDirection: 0
   FinalPosition: 0
   EnterTime: 2
---- !u!114 &1062457426058270779
+--- !u!114 &739439216791182318
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2714,42 +4223,42 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a3c599ddc9a1b854f85859c7762a12fb, type: 3}
-  m_Name: Dialogue Element
+  m_Script: {fileID: 11500000, guid: 31f75b66cbe889d4cb63a0a491cf5a3b, type: 3}
+  m_Name: Enter Scene Element
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 7768, y: -8}
+  position: {x: 1784, y: 392}
   ports:
     keys:
     - PreviousNode
     - NextNode
     values:
     - _fieldName: PreviousNode
-      _node: {fileID: 1062457426058270779}
+      _node: {fileID: 739439216791182318}
       _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections:
       - fieldName: NextNode
-        node: {fileID: 1924711864495957666}
+        node: {fileID: -2798654556817186916}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: NextNode
-      _node: {fileID: 1062457426058270779}
+      _node: {fileID: 739439216791182318}
       _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections:
       - fieldName: PreviousNode
-        node: {fileID: -6837374074360815640}
+        node: {fileID: 5842048289643196555}
         reroutePoints: []
       _direction: 1
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
   Active: 0
-  Next: {fileID: -6837374074360815640}
+  Next: {fileID: 5842048289643196555}
   PreviousNode:
     _fieldName: 
     _node: {fileID: 0}
@@ -2768,9 +4277,417 @@ MonoBehaviour:
     _connectionType: 0
     _typeConstraint: 0
     _dynamic: 0
-  CharacterName: Velorexe (<= Total Dummy)
-  Dialogue: You got quite some options when using this framework to customize little
-    things, I hope to expand this further in the future.
+  CharacterName: Nicho
+  Character: {fileID: 21300000, guid: b221d5fb3cdfcb342be4f4fbda559d3d, type: 3}
+  Flip: 1
+  EnterFromDirection: 1
+  FinalPosition: 1
+  EnterTime: 2
+--- !u!114 &752199792074477770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adabf642a00adb64f98845666fedcc5a, type: 3}
+  m_Name: Audio Dialogue Element
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 6632, y: 248}
+  ports:
+    keys:
+    - PreviousNode
+    - NextNode
+    values:
+    - _fieldName: PreviousNode
+      _node: {fileID: 752199792074477770}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: Choice0
+        node: {fileID: 7329309708168775159}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: NextNode
+      _node: {fileID: 752199792074477770}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  Active: 0
+  Next: {fileID: 0}
+  PreviousNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  NextNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  CharacterName: Brenhan
+  Dialogue: Hmmm sepertinya saya tidak bisa menerima kamu diperusahaan saya karena
+    track record kamu, semoga kamu bisa belajar tidak semena mena sama orang lain
+  Beep: 1
+  BeepOnVowel: 0
+  PitchShift: 0
+  MaxPitch: 0
+  BoopSoundEffect: {fileID: 8300000, guid: c8fa33de6006b874dbe76170f373dc23, type: 3}
+  DialogueClip: {fileID: 0}
+--- !u!114 &761547030029457639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adabf642a00adb64f98845666fedcc5a, type: 3}
+  m_Name: Audio Dialogue Element
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 9144, y: 232}
+  ports:
+    keys:
+    - PreviousNode
+    - NextNode
+    values:
+    - _fieldName: PreviousNode
+      _node: {fileID: 761547030029457639}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: NextNode
+        node: {fileID: -7339929055468810970}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: NextNode
+      _node: {fileID: 761547030029457639}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: PreviousNode
+        node: {fileID: 6140670441463795755}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  Active: 0
+  Next: {fileID: 0}
+  PreviousNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  NextNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  CharacterName: Narrator
+  Dialogue: Tamat...
+  Beep: 1
+  BeepOnVowel: 0
+  PitchShift: 0
+  MaxPitch: 0
+  BoopSoundEffect: {fileID: 8300000, guid: c8fa33de6006b874dbe76170f373dc23, type: 3}
+  DialogueClip: {fileID: 0}
+--- !u!114 &773347753657875058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 477b8157536ff9a4e8bcfb67567fee30, type: 3}
+  m_Name: Change Sprite Element
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 3704, y: 376}
+  ports:
+    keys:
+    - PreviousNode
+    - NextNode
+    values:
+    - _fieldName: PreviousNode
+      _node: {fileID: 773347753657875058}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: NextNode
+        node: {fileID: 507003638877126041}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: NextNode
+      _node: {fileID: 773347753657875058}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: PreviousNode
+        node: {fileID: -3604448882765655566}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  Active: 0
+  Next: {fileID: -3604448882765655566}
+  PreviousNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  NextNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  CharacterName: Nicho
+  NewSprite: {fileID: 21300000, guid: d8121f8255b9766428b82152979914ee, type: 3}
+--- !u!114 &852078809891245415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e69886790097bca409901d96bb3c0b2b, type: 3}
+  m_Name: Exit Scene Element
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 19912, y: -168}
+  ports:
+    keys:
+    - PreviousNode
+    - NextNode
+    values:
+    - _fieldName: PreviousNode
+      _node: {fileID: 852078809891245415}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: NextNode
+        node: {fileID: -3972201525609761876}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: NextNode
+      _node: {fileID: 852078809891245415}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: PreviousNode
+        node: {fileID: 7695958944125029517}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  Active: 0
+  Next: {fileID: 7695958944125029517}
+  PreviousNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  NextNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  CharacterName: Evans
+  ExitPosition: 1
+  ExitTime: 1
+--- !u!114 &998866305112232276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61fe714cebce5fe4ba0b71d53f36fade, type: 3}
+  m_Name: Change Background Element
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 8632, y: 696}
+  ports:
+    keys:
+    - PreviousNode
+    - NextNode
+    values:
+    - _fieldName: PreviousNode
+      _node: {fileID: 998866305112232276}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: NextNode
+        node: {fileID: -7229465601492288989}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: NextNode
+      _node: {fileID: 998866305112232276}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: PreviousNode
+        node: {fileID: 7583871586473082742}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  Active: 0
+  Next: {fileID: 7583871586473082742}
+  PreviousNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  NextNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  NewBackground: {fileID: 21300000, guid: c29ee73d0b32b3f44a76639c35135eb6, type: 3}
+  Fade: 1
+  FadeTime: 1
+--- !u!114 &1048497575071395081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adabf642a00adb64f98845666fedcc5a, type: 3}
+  m_Name: Audio Dialogue Element
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 22712, y: -312}
+  ports:
+    keys:
+    - PreviousNode
+    - NextNode
+    values:
+    - _fieldName: PreviousNode
+      _node: {fileID: 1048497575071395081}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: NextNode
+        node: {fileID: -4455669974092988047}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: NextNode
+      _node: {fileID: 1048497575071395081}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  Active: 0
+  Next: {fileID: 0}
+  PreviousNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  NextNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  CharacterName: Narrator
+  Dialogue: Tamat...
+  Beep: 1
+  BeepOnVowel: 0
+  PitchShift: 0
+  MaxPitch: 0
+  BoopSoundEffect: {fileID: 8300000, guid: c8fa33de6006b874dbe76170f373dc23, type: 3}
+  DialogueClip: {fileID: 0}
 --- !u!114 &1188066329567961428
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2784,7 +4701,7 @@ MonoBehaviour:
   m_Name: Change Sprite Element
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 7784, y: -600}
+  position: {x: 9272, y: -472}
   ports:
     keys:
     - PreviousNode
@@ -2849,7 +4766,7 @@ MonoBehaviour:
   m_Name: Enter Scene Element
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 4792, y: -504}
+  position: {x: 6376, y: -600}
   ports:
     keys:
     - PreviousNode
@@ -2918,7 +4835,7 @@ MonoBehaviour:
   m_Name: Audio Dialogue Element
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 10072, y: -456}
+  position: {x: 11896, y: -696}
   ports:
     keys:
     - PreviousNode
@@ -2930,7 +4847,7 @@ MonoBehaviour:
         PublicKeyToken=null
       connections:
       - fieldName: NextNode
-        node: {fileID: -4479720788931649049}
+        node: {fileID: 5652647674014321275}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -2969,7 +4886,7 @@ MonoBehaviour:
     _typeConstraint: 0
     _dynamic: 0
   CharacterName: Evans
-  Dialogue: Okee brenhan, mohon kerja samanya jugaa
+  Dialogue: Okee Brenhan, mohon kerja samanya jugaa
   Beep: 1
   BeepOnVowel: 0
   PitchShift: 0
@@ -2989,7 +4906,7 @@ MonoBehaviour:
   m_Name: Dialogue Element
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 632, y: -200}
+  position: {x: 792, y: -56}
   ports:
     keys:
     - PreviousNode
@@ -3043,71 +4960,6 @@ MonoBehaviour:
   Dialogue: Brenhan, adalah seorang siswa yang baru lulus dari SMK. Dia baru saja
     masuk ke Universitas Top di daerahnya. Hari ini, hari pertama dia masuk ke kelas
     dan mengejar pendidikannya.
---- !u!114 &1924711864495957666
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 477b8157536ff9a4e8bcfb67567fee30, type: 3}
-  m_Name: Change Sprite Element
-  m_EditorClassIdentifier: 
-  graph: {fileID: 11400000}
-  position: {x: 7432, y: -8}
-  ports:
-    keys:
-    - PreviousNode
-    - NextNode
-    values:
-    - _fieldName: PreviousNode
-      _node: {fileID: 1924711864495957666}
-      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections:
-      - fieldName: NextNode
-        node: {fileID: -2829197401580914606}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: NextNode
-      _node: {fileID: 1924711864495957666}
-      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections:
-      - fieldName: PreviousNode
-        node: {fileID: 1062457426058270779}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
-  Active: 0
-  Next: {fileID: 1062457426058270779}
-  PreviousNode:
-    _fieldName: 
-    _node: {fileID: 0}
-    _typeQualifiedName: 
-    connections: []
-    _direction: 0
-    _connectionType: 0
-    _typeConstraint: 0
-    _dynamic: 0
-  NextNode:
-    _fieldName: 
-    _node: {fileID: 0}
-    _typeQualifiedName: 
-    connections: []
-    _direction: 0
-    _connectionType: 0
-    _typeConstraint: 0
-    _dynamic: 0
-  CharacterName: Velorexe
-  NewSprite: {fileID: 21300000, guid: 5a263f0efe0c15242bcc465bfaa22a6c, type: 3}
 --- !u!114 &1957804071662857071
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3121,7 +4973,7 @@ MonoBehaviour:
   m_Name: Change Sprite Element
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 6888, y: -456}
+  position: {x: 8472, y: -552}
   ports:
     keys:
     - PreviousNode
@@ -3172,7 +5024,7 @@ MonoBehaviour:
     _typeConstraint: 0
     _dynamic: 0
   CharacterName: Evans
-  NewSprite: {fileID: 21300000, guid: cea703b91c6649040b75e30ad0b4ecb8, type: 3}
+  NewSprite: {fileID: 21300000, guid: 141fd9fab394983499b66bc660533299, type: 3}
 --- !u!114 &2060456585478444446
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3186,7 +5038,7 @@ MonoBehaviour:
   m_Name: Exit Scene Element
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 10456, y: -152}
+  position: {x: 12248, y: -392}
   ports:
     keys:
     - PreviousNode
@@ -3252,7 +5104,7 @@ MonoBehaviour:
   m_Name: Change Background Element
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 10904, y: -360}
+  position: {x: 12792, y: -456}
   ports:
     keys:
     - PreviousNode
@@ -3305,6 +5157,75 @@ MonoBehaviour:
   NewBackground: {fileID: 21300000, guid: c29ee73d0b32b3f44a76639c35135eb6, type: 3}
   Fade: 1
   FadeTime: 1
+--- !u!114 &2535755050067135849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31f75b66cbe889d4cb63a0a491cf5a3b, type: 3}
+  m_Name: Enter Scene Element
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 21976, y: -1016}
+  ports:
+    keys:
+    - PreviousNode
+    - NextNode
+    values:
+    - _fieldName: PreviousNode
+      _node: {fileID: 2535755050067135849}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: NextNode
+        node: {fileID: -7569021140806377174}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: NextNode
+      _node: {fileID: 2535755050067135849}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: PreviousNode
+        node: {fileID: -4016512735271832807}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  Active: 0
+  Next: {fileID: -4016512735271832807}
+  PreviousNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  NextNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  CharacterName: Brenhan
+  Character: {fileID: 21300000, guid: 0f88e6d83ed69ba45b31137c81f2825b, type: 3}
+  Flip: 0
+  EnterFromDirection: 0
+  FinalPosition: 0
+  EnterTime: 2
 --- !u!114 &2759896806774999601
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3388,7 +5309,7 @@ MonoBehaviour:
   m_Name: Exit Scene Element
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 10456, y: -552}
+  position: {x: 12280, y: -840}
   ports:
     keys:
     - PreviousNode
@@ -3441,6 +5362,143 @@ MonoBehaviour:
   CharacterName: Rangga
   ExitPosition: 0
   ExitTime: 1
+--- !u!114 &2783067641319288440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e69886790097bca409901d96bb3c0b2b, type: 3}
+  m_Name: Exit Scene Element
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 8232, y: 648}
+  ports:
+    keys:
+    - PreviousNode
+    - NextNode
+    values:
+    - _fieldName: PreviousNode
+      _node: {fileID: 2783067641319288440}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: NextNode
+        node: {fileID: -1865531538815950089}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: NextNode
+      _node: {fileID: 2783067641319288440}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: PreviousNode
+        node: {fileID: -7229465601492288989}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  Active: 0
+  Next: {fileID: -7229465601492288989}
+  PreviousNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  NextNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  CharacterName: Nicho
+  ExitPosition: 1
+  ExitTime: 1
+--- !u!114 &3047374412578883765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adabf642a00adb64f98845666fedcc5a, type: 3}
+  m_Name: Audio Dialogue Element
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 4936, y: 344}
+  ports:
+    keys:
+    - PreviousNode
+    - NextNode
+    values:
+    - _fieldName: PreviousNode
+      _node: {fileID: 3047374412578883765}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: NextNode
+        node: {fileID: -484826832934215027}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: NextNode
+      _node: {fileID: 3047374412578883765}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: PreviousNode
+        node: {fileID: -4319246424005568987}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  Active: 0
+  Next: {fileID: -4319246424005568987}
+  PreviousNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  NextNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  CharacterName: Brenhan
+  Dialogue: Iyaa, saya Brenhan yang dulu kamu pernah palak
+  Beep: 1
+  BeepOnVowel: 0
+  PitchShift: 0
+  MaxPitch: 0
+  BoopSoundEffect: {fileID: 8300000, guid: c8fa33de6006b874dbe76170f373dc23, type: 3}
+  DialogueClip: {fileID: 0}
 --- !u!114 &3116171845523584800
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3454,7 +5512,7 @@ MonoBehaviour:
   m_Name: Dialogue Element
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 3560, y: -184}
+  position: {x: 5112, y: -536}
   ports:
     keys:
     - PreviousNode
@@ -3505,7 +5563,141 @@ MonoBehaviour:
     _typeConstraint: 0
     _dynamic: 0
   CharacterName: Brenhan
-  Dialogue: Anuu kak, gk adaa
+  Dialogue: Ma-maaf kak saya lupa bawa uang hari ini
+--- !u!114 &3265720623145726910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adabf642a00adb64f98845666fedcc5a, type: 3}
+  m_Name: Audio Dialogue Element
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 9896, y: 648}
+  ports:
+    keys:
+    - PreviousNode
+    - NextNode
+    values:
+    - _fieldName: PreviousNode
+      _node: {fileID: 3265720623145726910}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: NextNode
+        node: {fileID: -4347841974163663217}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: NextNode
+      _node: {fileID: 3265720623145726910}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  Active: 0
+  Next: {fileID: 0}
+  PreviousNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  NextNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  CharacterName: Narrator
+  Dialogue: Tamat...
+  Beep: 1
+  BeepOnVowel: 0
+  PitchShift: 0
+  MaxPitch: 0
+  BoopSoundEffect: {fileID: 8300000, guid: c8fa33de6006b874dbe76170f373dc23, type: 3}
+  DialogueClip: {fileID: 0}
+--- !u!114 &3299889846295126473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e69886790097bca409901d96bb3c0b2b, type: 3}
+  m_Name: Exit Scene Element
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 7880, y: 248}
+  ports:
+    keys:
+    - PreviousNode
+    - NextNode
+    values:
+    - _fieldName: PreviousNode
+      _node: {fileID: 3299889846295126473}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: NextNode
+        node: {fileID: 6975128327553070621}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: NextNode
+      _node: {fileID: 3299889846295126473}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: PreviousNode
+        node: {fileID: 8194312446476994431}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  Active: 0
+  Next: {fileID: 8194312446476994431}
+  PreviousNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  NextNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  CharacterName: Brenhan
+  ExitPosition: 0
+  ExitTime: 1
 --- !u!114 &3857943165007244702
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3519,7 +5711,7 @@ MonoBehaviour:
   m_Name: Audio Dialogue Element
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 13624, y: -744}
+  position: {x: 15528, y: -584}
   ports:
     keys:
     - PreviousNode
@@ -3550,7 +5742,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   Active: 0
-  Next: {fileID: 0}
+  Next: {fileID: 8542142543918372952}
   PreviousNode:
     _fieldName: 
     _node: {fileID: 0}
@@ -3575,72 +5767,8 @@ MonoBehaviour:
   BeepOnVowel: 0
   PitchShift: 0
   MaxPitch: 0
-  BoopSoundEffect: {fileID: 0}
+  BoopSoundEffect: {fileID: 8300000, guid: c8fa33de6006b874dbe76170f373dc23, type: 3}
   DialogueClip: {fileID: 0}
---- !u!114 &3964138587138135276
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8799a82e84b964f4bb292369e6bf7f69, type: 3}
-  m_Name: Loading Screen Element
-  m_EditorClassIdentifier: 
-  graph: {fileID: 11400000}
-  position: {x: 11368, y: 8}
-  ports:
-    keys:
-    - PreviousNode
-    - NextNode
-    values:
-    - _fieldName: PreviousNode
-      _node: {fileID: 3964138587138135276}
-      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections:
-      - fieldName: NextNode
-        node: {fileID: 7815111530212063091}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: NextNode
-      _node: {fileID: 3964138587138135276}
-      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
-  Active: 0
-  Next: {fileID: 0}
-  PreviousNode:
-    _fieldName: 
-    _node: {fileID: 0}
-    _typeQualifiedName: 
-    connections: []
-    _direction: 0
-    _connectionType: 0
-    _typeConstraint: 0
-    _dynamic: 0
-  NextNode:
-    _fieldName: 
-    _node: {fileID: 0}
-    _typeQualifiedName: 
-    connections: []
-    _direction: 0
-    _connectionType: 0
-    _typeConstraint: 0
-    _dynamic: 0
-  ShowLoadScreen: 1
-  FadeOutTime: 1
-  FadeOtherElements: 1
-  WaitToFinish: 1
 --- !u!114 &4151174159995227328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3654,7 +5782,7 @@ MonoBehaviour:
   m_Name: Audio Dialogue Element
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 15624, y: -744}
+  position: {x: 17608, y: -632}
   ports:
     keys:
     - PreviousNode
@@ -3676,13 +5804,16 @@ MonoBehaviour:
       _node: {fileID: 4151174159995227328}
       _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
-      connections: []
+      connections:
+      - fieldName: PreviousNode
+        node: {fileID: -1768207896223625835}
+        reroutePoints: []
       _direction: 1
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
   Active: 0
-  Next: {fileID: 0}
+  Next: {fileID: -1768207896223625835}
   PreviousNode:
     _fieldName: 
     _node: {fileID: 0}
@@ -3702,12 +5833,12 @@ MonoBehaviour:
     _typeConstraint: 0
     _dynamic: 0
   CharacterName: Brenhan
-  Dialogue: Wahh main yah, hmmmmm?
+  Dialogue: Wahh main game yah, hmmmmm?
   Beep: 1
   BeepOnVowel: 0
   PitchShift: 1
   MaxPitch: 0
-  BoopSoundEffect: {fileID: 0}
+  BoopSoundEffect: {fileID: 8300000, guid: c8fa33de6006b874dbe76170f373dc23, type: 3}
   DialogueClip: {fileID: 0}
 --- !u!114 &4197916860347936428
 MonoBehaviour:
@@ -3722,7 +5853,7 @@ MonoBehaviour:
   m_Name: Audio Dialogue Element
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 11272, y: -600}
+  position: {x: 13208, y: -472}
   ports:
     keys:
     - PreviousNode
@@ -3793,7 +5924,7 @@ MonoBehaviour:
   m_Name: Audio Dialogue Element
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 2712, y: -616}
+  position: {x: 4296, y: -584}
   ports:
     keys:
     - PreviousNode
@@ -3844,15 +5975,15 @@ MonoBehaviour:
     _typeConstraint: 0
     _dynamic: 0
   CharacterName: Nicho Kating
-  Dialogue: Hei anak baru, kenalin gw nico kakak kelas semester 10 disini. Sini kasih
-    gw duit, kalo nggak bersiap lah kamu
+  Dialogue: Hei anak baru, kenalin gue NIcho kakak kelas semester 10 disini. Sini
+    kasih gue duit, kalo nggak bersiaplah kamu
   Beep: 1
   BeepOnVowel: 1
   PitchShift: 1
   MaxPitch: 0
   BoopSoundEffect: {fileID: 8300000, guid: c8fa33de6006b874dbe76170f373dc23, type: 3}
   DialogueClip: {fileID: 0}
---- !u!114 &5032050557008875230
+--- !u!114 &4468268177828170441
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3861,39 +5992,42 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a3c599ddc9a1b854f85859c7762a12fb, type: 3}
-  m_Name: Dialogue Element
+  m_Script: {fileID: 11500000, guid: 477b8157536ff9a4e8bcfb67567fee30, type: 3}
+  m_Name: Change Sprite Element
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 5352, y: -8}
+  position: {x: 6984, y: 616}
   ports:
     keys:
     - PreviousNode
     - NextNode
     values:
     - _fieldName: PreviousNode
-      _node: {fileID: 5032050557008875230}
+      _node: {fileID: 4468268177828170441}
       _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
-      connections: []
+      connections:
+      - fieldName: NextNode
+        node: {fileID: 6046208505807656131}
+        reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: NextNode
-      _node: {fileID: 5032050557008875230}
+      _node: {fileID: 4468268177828170441}
       _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections:
       - fieldName: PreviousNode
-        node: {fileID: -2260763046560012262}
+        node: {fileID: 8712895123817620987}
         reroutePoints: []
       _direction: 1
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
   Active: 0
-  Next: {fileID: -2260763046560012262}
+  Next: {fileID: 8712895123817620987}
   PreviousNode:
     _fieldName: 
     _node: {fileID: 0}
@@ -3912,9 +6046,221 @@ MonoBehaviour:
     _connectionType: 0
     _typeConstraint: 0
     _dynamic: 0
-  CharacterName: Velorexe
-  Dialogue: Ofcourse you can also use the Dialogue options that don't have audio
-    on them for some internal thinking of your character.
+  CharacterName: Nicho
+  NewSprite: {fileID: 21300000, guid: b221d5fb3cdfcb342be4f4fbda559d3d, type: 3}
+--- !u!114 &4512040306052948238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adabf642a00adb64f98845666fedcc5a, type: 3}
+  m_Name: Audio Dialogue Element
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 21064, y: -1016}
+  ports:
+    keys:
+    - PreviousNode
+    - NextNode
+    values:
+    - _fieldName: PreviousNode
+      _node: {fileID: 4512040306052948238}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: NextNode
+        node: {fileID: 8731290610620534054}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: NextNode
+      _node: {fileID: 4512040306052948238}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: PreviousNode
+        node: {fileID: -7569021140806377174}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  Active: 0
+  Next: {fileID: -7569021140806377174}
+  PreviousNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  NextNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  CharacterName: Narrator
+  Dialogue: Tiba saatnya pembagian nilai ujian
+  Beep: 1
+  BeepOnVowel: 0
+  PitchShift: 0
+  MaxPitch: 0
+  BoopSoundEffect: {fileID: 8300000, guid: c8fa33de6006b874dbe76170f373dc23, type: 3}
+  DialogueClip: {fileID: 0}
+--- !u!114 &4688955043436181942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adabf642a00adb64f98845666fedcc5a, type: 3}
+  m_Name: Audio Dialogue Element
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 7368, y: 200}
+  ports:
+    keys:
+    - PreviousNode
+    - NextNode
+    values:
+    - _fieldName: PreviousNode
+      _node: {fileID: 4688955043436181942}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: NextNode
+        node: {fileID: -2600975054793003665}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: NextNode
+      _node: {fileID: 4688955043436181942}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: PreviousNode
+        node: {fileID: 6975128327553070621}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  Active: 0
+  Next: {fileID: 6975128327553070621}
+  PreviousNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  NextNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  CharacterName: Nicho
+  Dialogue: Baik pak, mohon maaf dan terima kasih sarannya
+  Beep: 1
+  BeepOnVowel: 0
+  PitchShift: 0
+  MaxPitch: 0
+  BoopSoundEffect: {fileID: 8300000, guid: c8fa33de6006b874dbe76170f373dc23, type: 3}
+  DialogueClip: {fileID: 0}
+--- !u!114 &4735275333020133127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adabf642a00adb64f98845666fedcc5a, type: 3}
+  m_Name: Audio Dialogue Element
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -1080, y: 376}
+  ports:
+    keys:
+    - PreviousNode
+    - NextNode
+    values:
+    - _fieldName: PreviousNode
+      _node: {fileID: 4735275333020133127}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: NextNode
+        node: {fileID: 5179100305766523702}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: NextNode
+      _node: {fileID: 4735275333020133127}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: PreviousNode
+        node: {fileID: -5343891650230754450}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  Active: 0
+  Next: {fileID: -5343891650230754450}
+  PreviousNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  NextNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  CharacterName: Brenhan
+  Dialogue: Siappp!!
+  Beep: 1
+  BeepOnVowel: 0
+  PitchShift: 0
+  MaxPitch: 0
+  BoopSoundEffect: {fileID: 8300000, guid: c8fa33de6006b874dbe76170f373dc23, type: 3}
+  DialogueClip: {fileID: 0}
 --- !u!114 &5176934675069175758
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3928,7 +6274,7 @@ MonoBehaviour:
   m_Name: Exit Scene Element
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 10472, y: -344}
+  position: {x: 12248, y: -616}
   ports:
     keys:
     - PreviousNode
@@ -3981,6 +6327,78 @@ MonoBehaviour:
   CharacterName: Evans
   ExitPosition: 0
   ExitTime: 1
+--- !u!114 &5179100305766523702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adabf642a00adb64f98845666fedcc5a, type: 3}
+  m_Name: Audio Dialogue Element
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 24008, y: -952}
+  ports:
+    keys:
+    - PreviousNode
+    - NextNode
+    values:
+    - _fieldName: PreviousNode
+      _node: {fileID: 5179100305766523702}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: NextNode
+        node: {fileID: 255884088687959799}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: NextNode
+      _node: {fileID: 5179100305766523702}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: PreviousNode
+        node: {fileID: 4735275333020133127}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  Active: 0
+  Next: {fileID: 4735275333020133127}
+  PreviousNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  NextNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  CharacterName: Evans
+  Dialogue: Iyaaa, terima kasih juga Brenhan. Next time kita belajar bareng lagi
+    yah
+  Beep: 1
+  BeepOnVowel: 0
+  PitchShift: 0
+  MaxPitch: 0
+  BoopSoundEffect: {fileID: 8300000, guid: c8fa33de6006b874dbe76170f373dc23, type: 3}
+  DialogueClip: {fileID: 0}
 --- !u!114 &5270346473795117227
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4043,7 +6461,7 @@ MonoBehaviour:
     _dynamic: 0
   StoryName: Brenhan Story
   IsRoot: 1
---- !u!114 &5964938735606451206
+--- !u!114 &5652647674014321275
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4052,42 +6470,42 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31f75b66cbe889d4cb63a0a491cf5a3b, type: 3}
-  m_Name: Enter Scene Element
+  m_Script: {fileID: 11500000, guid: adabf642a00adb64f98845666fedcc5a, type: 3}
+  m_Name: Audio Dialogue Element
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 6376, y: -8}
+  position: {x: 11544, y: -696}
   ports:
     keys:
     - PreviousNode
     - NextNode
     values:
     - _fieldName: PreviousNode
-      _node: {fileID: 5964938735606451206}
+      _node: {fileID: 5652647674014321275}
       _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections:
       - fieldName: NextNode
-        node: {fileID: -6584678925603748989}
+        node: {fileID: -4479720788931649049}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: NextNode
-      _node: {fileID: 5964938735606451206}
+      _node: {fileID: 5652647674014321275}
       _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections:
       - fieldName: PreviousNode
-        node: {fileID: -3599330920068850453}
+        node: {fileID: 1347441856868865553}
         reroutePoints: []
       _direction: 1
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
   Active: 0
-  Next: {fileID: -3599330920068850453}
+  Next: {fileID: 1347441856868865553}
   PreviousNode:
     _fieldName: 
     _node: {fileID: 0}
@@ -4106,12 +6524,358 @@ MonoBehaviour:
     _connectionType: 0
     _typeConstraint: 0
     _dynamic: 0
-  CharacterName: Dummy_01
-  Character: {fileID: 21300000, guid: 5a263f0efe0c15242bcc465bfaa22a6c, type: 3}
-  Flip: 0
-  EnterFromDirection: 1
-  FinalPosition: 1
-  EnterTime: 2
+  CharacterName: Brenhan
+  Dialogue: selama 4 tahun mohon kerja samanya dan bimbingannya
+  Beep: 1
+  BeepOnVowel: 0
+  PitchShift: 0
+  MaxPitch: 0
+  BoopSoundEffect: {fileID: 8300000, guid: c8fa33de6006b874dbe76170f373dc23, type: 3}
+  DialogueClip: {fileID: 0}
+--- !u!114 &5660813780440206128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 477b8157536ff9a4e8bcfb67567fee30, type: 3}
+  m_Name: Change Sprite Element
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 2872, y: 440}
+  ports:
+    keys:
+    - PreviousNode
+    - NextNode
+    values:
+    - _fieldName: PreviousNode
+      _node: {fileID: 5660813780440206128}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: NextNode
+        node: {fileID: -8018070471083523046}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: NextNode
+      _node: {fileID: 5660813780440206128}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: PreviousNode
+        node: {fileID: 507003638877126041}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  Active: 0
+  Next: {fileID: 507003638877126041}
+  PreviousNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  NextNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  CharacterName: Brenhan
+  NewSprite: {fileID: 21300000, guid: 163ea6703372e1646a618eef332cedc4, type: 3}
+--- !u!114 &5842048289643196555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adabf642a00adb64f98845666fedcc5a, type: 3}
+  m_Name: Audio Dialogue Element
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 2184, y: 392}
+  ports:
+    keys:
+    - PreviousNode
+    - NextNode
+    values:
+    - _fieldName: PreviousNode
+      _node: {fileID: 5842048289643196555}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: NextNode
+        node: {fileID: 739439216791182318}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: NextNode
+      _node: {fileID: 5842048289643196555}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: PreviousNode
+        node: {fileID: -8018070471083523046}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  Active: 0
+  Next: {fileID: -8018070471083523046}
+  PreviousNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  NextNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  CharacterName: Nicho
+  Dialogue: Permisi pak, saya yang mau interview di perusahaan bapak
+  Beep: 1
+  BeepOnVowel: 0
+  PitchShift: 0
+  MaxPitch: 0
+  BoopSoundEffect: {fileID: 8300000, guid: c8fa33de6006b874dbe76170f373dc23, type: 3}
+  DialogueClip: {fileID: 0}
+--- !u!114 &5882214817497998446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 186519c80b988364fba5cea0c54f9e49, type: 3}
+  m_Name: Wait Element
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -392, y: 392}
+  ports:
+    keys:
+    - PreviousNode
+    - NextNode
+    values:
+    - _fieldName: PreviousNode
+      _node: {fileID: 5882214817497998446}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: NextNode
+        node: {fileID: 258446910205005845}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: NextNode
+      _node: {fileID: 5882214817497998446}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: PreviousNode
+        node: {fileID: 6146185006663411779}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  Active: 0
+  Next: {fileID: 6146185006663411779}
+  PreviousNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  NextNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  WaitTime: 1
+--- !u!114 &6046208505807656131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adabf642a00adb64f98845666fedcc5a, type: 3}
+  m_Name: Audio Dialogue Element
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 6600, y: 616}
+  ports:
+    keys:
+    - PreviousNode
+    - NextNode
+    values:
+    - _fieldName: PreviousNode
+      _node: {fileID: 6046208505807656131}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: Choice1
+        node: {fileID: 7329309708168775159}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: NextNode
+      _node: {fileID: 6046208505807656131}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: PreviousNode
+        node: {fileID: 4468268177828170441}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  Active: 0
+  Next: {fileID: 4468268177828170441}
+  PreviousNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  NextNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  CharacterName: Brenhan
+  Dialogue: Tidak apa apa nico, saya sudah memaafkan kamu dan semua orang berhak
+    mendapatkan kesempatan kedua
+  Beep: 1
+  BeepOnVowel: 0
+  PitchShift: 0
+  MaxPitch: 0
+  BoopSoundEffect: {fileID: 8300000, guid: c8fa33de6006b874dbe76170f373dc23, type: 3}
+  DialogueClip: {fileID: 0}
+--- !u!114 &6133128419032258687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adabf642a00adb64f98845666fedcc5a, type: 3}
+  m_Name: Audio Dialogue Element
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 648, y: 392}
+  ports:
+    keys:
+    - PreviousNode
+    - NextNode
+    values:
+    - _fieldName: PreviousNode
+      _node: {fileID: 6133128419032258687}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: NextNode
+        node: {fileID: -6981931894936851312}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: NextNode
+      _node: {fileID: 6133128419032258687}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: PreviousNode
+        node: {fileID: 7980158708561704369}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  Active: 0
+  Next: {fileID: 7980158708561704369}
+  PreviousNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  NextNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  CharacterName: Narrator
+  Dialogue: Suatu hari perusahaan Brenhan membuka lowongan dan Nicholas tertarik
+    untuk melamar.
+  Beep: 1
+  BeepOnVowel: 0
+  PitchShift: 0
+  MaxPitch: 0
+  BoopSoundEffect: {fileID: 8300000, guid: c8fa33de6006b874dbe76170f373dc23, type: 3}
+  DialogueClip: {fileID: 0}
 --- !u!114 &6138253911944153975
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4125,7 +6889,7 @@ MonoBehaviour:
   m_Name: Audio Dialogue Element
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 5976, y: -424}
+  position: {x: 7544, y: -504}
   ports:
     keys:
     - PreviousNode
@@ -4181,9 +6945,9 @@ MonoBehaviour:
   BeepOnVowel: 0
   PitchShift: 0
   MaxPitch: 0
-  BoopSoundEffect: {fileID: 0}
+  BoopSoundEffect: {fileID: 8300000, guid: c8fa33de6006b874dbe76170f373dc23, type: 3}
   DialogueClip: {fileID: 0}
---- !u!114 &6472896098518316389
+--- !u!114 &6140670441463795755
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4192,42 +6956,39 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e69886790097bca409901d96bb3c0b2b, type: 3}
-  m_Name: Exit Scene Element
+  m_Script: {fileID: 11500000, guid: adabf642a00adb64f98845666fedcc5a, type: 3}
+  m_Name: Audio Dialogue Element
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 7096, y: 152}
+  position: {x: 9528, y: 216}
   ports:
     keys:
     - PreviousNode
     - NextNode
     values:
     - _fieldName: PreviousNode
-      _node: {fileID: 6472896098518316389}
+      _node: {fileID: 6140670441463795755}
       _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections:
       - fieldName: NextNode
-        node: {fileID: -5583132717968379321}
+        node: {fileID: 761547030029457639}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: NextNode
-      _node: {fileID: 6472896098518316389}
+      _node: {fileID: 6140670441463795755}
       _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
-      connections:
-      - fieldName: PreviousNode
-        node: {fileID: -2829197401580914606}
-        reroutePoints: []
+      connections: []
       _direction: 1
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
   Active: 0
-  Next: {fileID: -2829197401580914606}
+  Next: {fileID: 0}
   PreviousNode:
     _fieldName: 
     _node: {fileID: 0}
@@ -4246,9 +7007,149 @@ MonoBehaviour:
     _connectionType: 0
     _typeConstraint: 0
     _dynamic: 0
-  CharacterName: Dummy_02
-  ExitPosition: 1
-  ExitTime: 2.5
+  CharacterName: Narrator
+  Dialogue: Tamat...
+  Beep: 1
+  BeepOnVowel: 0
+  PitchShift: 0
+  MaxPitch: 0
+  BoopSoundEffect: {fileID: 8300000, guid: c8fa33de6006b874dbe76170f373dc23, type: 3}
+  DialogueClip: {fileID: 0}
+--- !u!114 &6146185006663411779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61fe714cebce5fe4ba0b71d53f36fade, type: 3}
+  m_Name: Change Background Element
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -72, y: 392}
+  ports:
+    keys:
+    - PreviousNode
+    - NextNode
+    values:
+    - _fieldName: PreviousNode
+      _node: {fileID: 6146185006663411779}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: NextNode
+        node: {fileID: 5882214817497998446}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: NextNode
+      _node: {fileID: 6146185006663411779}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: PreviousNode
+        node: {fileID: -6981931894936851312}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  Active: 0
+  Next: {fileID: -6981931894936851312}
+  PreviousNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  NextNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  NewBackground: {fileID: 21300000, guid: c29ee73d0b32b3f44a76639c35135eb6, type: 3}
+  Fade: 1
+  FadeTime: 1
+--- !u!114 &6375271875300747646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31f75b66cbe889d4cb63a0a491cf5a3b, type: 3}
+  m_Name: Enter Scene Element
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 22616, y: -920}
+  ports:
+    keys:
+    - PreviousNode
+    - NextNode
+    values:
+    - _fieldName: PreviousNode
+      _node: {fileID: 6375271875300747646}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: NextNode
+        node: {fileID: -4016512735271832807}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: NextNode
+      _node: {fileID: 6375271875300747646}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: PreviousNode
+        node: {fileID: -3877059007464953636}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  Active: 0
+  Next: {fileID: -3877059007464953636}
+  PreviousNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  NextNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  CharacterName: Evans
+  Character: {fileID: 21300000, guid: cea703b91c6649040b75e30ad0b4ecb8, type: 3}
+  Flip: 1
+  EnterFromDirection: 1
+  FinalPosition: 1
+  EnterTime: 2
 --- !u!114 &6840996602200375206
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4262,7 +7163,7 @@ MonoBehaviour:
   m_Name: Change Sprite Element
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 2472, y: -248}
+  position: {x: 3784, y: -536}
   ports:
     keys:
     - PreviousNode
@@ -4314,7 +7215,7 @@ MonoBehaviour:
     _dynamic: 0
   CharacterName: Nicho Kating
   NewSprite: {fileID: 21300000, guid: 0c93d7183e55dd04b8eb102d5a53e576, type: 3}
---- !u!114 &7384384192375087222
+--- !u!114 &6975128327553070621
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4323,42 +7224,42 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 477b8157536ff9a4e8bcfb67567fee30, type: 3}
-  m_Name: Change Sprite Element
+  m_Script: {fileID: 11500000, guid: e69886790097bca409901d96bb3c0b2b, type: 3}
+  m_Name: Exit Scene Element
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 9752, y: 8}
+  position: {x: 7880, y: 56}
   ports:
     keys:
     - PreviousNode
     - NextNode
     values:
     - _fieldName: PreviousNode
-      _node: {fileID: 7384384192375087222}
+      _node: {fileID: 6975128327553070621}
       _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections:
       - fieldName: NextNode
-        node: {fileID: 299300065002464599}
+        node: {fileID: 4688955043436181942}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: NextNode
-      _node: {fileID: 7384384192375087222}
+      _node: {fileID: 6975128327553070621}
       _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections:
       - fieldName: PreviousNode
-        node: {fileID: -1398034605684631682}
+        node: {fileID: 3299889846295126473}
         reroutePoints: []
       _direction: 1
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
   Active: 0
-  Next: {fileID: -1398034605684631682}
+  Next: {fileID: 3299889846295126473}
   PreviousNode:
     _fieldName: 
     _node: {fileID: 0}
@@ -4377,8 +7278,100 @@ MonoBehaviour:
     _connectionType: 0
     _typeConstraint: 0
     _dynamic: 0
-  CharacterName: Velorexe
-  NewSprite: {fileID: 21300000, guid: 5a263f0efe0c15242bcc465bfaa22a6c, type: 3}
+  CharacterName: Nicho
+  ExitPosition: 1
+  ExitTime: 1
+--- !u!114 &7329309708168775159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5078e2883b71e7438a5d965f15f77c8, type: 3}
+  m_Name: Choice Element
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 6248, y: 488}
+  ports:
+    keys:
+    - PreviousNode
+    - NextNode
+    - Choice0
+    - Choice1
+    values:
+    - _fieldName: PreviousNode
+      _node: {fileID: 7329309708168775159}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: NextNode
+        node: {fileID: -1970332319159359944}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: NextNode
+      _node: {fileID: 7329309708168775159}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Choice0
+      _node: {fileID: 7329309708168775159}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: PreviousNode
+        node: {fileID: 752199792074477770}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 1
+      _dynamic: 1
+    - _fieldName: Choice1
+      _node: {fileID: 7329309708168775159}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: PreviousNode
+        node: {fileID: 6046208505807656131}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 1
+      _dynamic: 1
+  Active: 0
+  Next: {fileID: 0}
+  PreviousNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  NextNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  Choices:
+  - Menolak NIcho bekerja di perusahaan
+  - Menerima  Nicho bekerja di perusahaan
+  ShuffleChocies: 0
+  HideDialogue: 1
 --- !u!114 &7487686641615215702
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4392,7 +7385,7 @@ MonoBehaviour:
   m_Name: Change Sprite Element
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 1656, y: -408}
+  position: {x: 2584, y: -600}
   ports:
     keys:
     - PreviousNode
@@ -4444,7 +7437,7 @@ MonoBehaviour:
     _dynamic: 0
   CharacterName: Brenhan
   NewSprite: {fileID: 21300000, guid: 9edf9438327b69649ac1bfbe3a5388a9, type: 3}
---- !u!114 &7815111530212063091
+--- !u!114 &7583871586473082742
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4453,42 +7446,42 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a3c599ddc9a1b854f85859c7762a12fb, type: 3}
-  m_Name: Dialogue Element
+  m_Script: {fileID: 11500000, guid: adabf642a00adb64f98845666fedcc5a, type: 3}
+  m_Name: Audio Dialogue Element
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 11032, y: 8}
+  position: {x: 8984, y: 680}
   ports:
     keys:
     - PreviousNode
     - NextNode
     values:
     - _fieldName: PreviousNode
-      _node: {fileID: 7815111530212063091}
+      _node: {fileID: 7583871586473082742}
       _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections:
       - fieldName: NextNode
-        node: {fileID: -7925866276808309983}
+        node: {fileID: 998866305112232276}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: NextNode
-      _node: {fileID: 7815111530212063091}
+      _node: {fileID: 7583871586473082742}
       _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
       connections:
       - fieldName: PreviousNode
-        node: {fileID: 3964138587138135276}
+        node: {fileID: -4347841974163663217}
         reroutePoints: []
       _direction: 1
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
   Active: 0
-  Next: {fileID: 3964138587138135276}
+  Next: {fileID: -4347841974163663217}
   PreviousNode:
     _fieldName: 
     _node: {fileID: 0}
@@ -4507,9 +7500,285 @@ MonoBehaviour:
     _connectionType: 0
     _typeConstraint: 0
     _dynamic: 0
-  CharacterName: Velorexe
-  Dialogue: Anyways, I'm pretty much done explaining right now. So you can see how
-    far you'll get before you miss any UVNF Elements.
+  CharacterName: Narrator
+  Dialogue: Brenhan menerima Nicho sebagai pegawainya dan merupakan keputusan yang
+    tepat karena Nicho sangat giat bekerja membuat perusahaan Brenhan berkembang
+    sangat pesat
+  Beep: 1
+  BeepOnVowel: 0
+  PitchShift: 0
+  MaxPitch: 0
+  BoopSoundEffect: {fileID: 8300000, guid: c8fa33de6006b874dbe76170f373dc23, type: 3}
+  DialogueClip: {fileID: 0}
+--- !u!114 &7695958944125029517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e69886790097bca409901d96bb3c0b2b, type: 3}
+  m_Name: Exit Scene Element
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 19912, y: 40}
+  ports:
+    keys:
+    - PreviousNode
+    - NextNode
+    values:
+    - _fieldName: PreviousNode
+      _node: {fileID: 7695958944125029517}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: NextNode
+        node: {fileID: 852078809891245415}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: NextNode
+      _node: {fileID: 7695958944125029517}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: PreviousNode
+        node: {fileID: -7138757652546800438}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  Active: 0
+  Next: {fileID: -7138757652546800438}
+  PreviousNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  NextNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  CharacterName: Rangga
+  ExitPosition: 1
+  ExitTime: 1
+--- !u!114 &7980158708561704369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adabf642a00adb64f98845666fedcc5a, type: 3}
+  m_Name: Audio Dialogue Element
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 1048, y: 392}
+  ports:
+    keys:
+    - PreviousNode
+    - NextNode
+    values:
+    - _fieldName: PreviousNode
+      _node: {fileID: 7980158708561704369}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: NextNode
+        node: {fileID: 6133128419032258687}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: NextNode
+      _node: {fileID: 7980158708561704369}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: PreviousNode
+        node: {fileID: -2798654556817186916}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  Active: 0
+  Next: {fileID: -2798654556817186916}
+  PreviousNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  NextNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  CharacterName: Narrator
+  Dialogue: Tiba saatnya Nicholas bertemu Brenhan untuk interview
+  Beep: 1
+  BeepOnVowel: 0
+  PitchShift: 0
+  MaxPitch: 0
+  BoopSoundEffect: {fileID: 8300000, guid: c8fa33de6006b874dbe76170f373dc23, type: 3}
+  DialogueClip: {fileID: 0}
+--- !u!114 &8194312446476994431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61fe714cebce5fe4ba0b71d53f36fade, type: 3}
+  m_Name: Change Background Element
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 8232, y: 248}
+  ports:
+    keys:
+    - PreviousNode
+    - NextNode
+    values:
+    - _fieldName: PreviousNode
+      _node: {fileID: 8194312446476994431}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: NextNode
+        node: {fileID: 3299889846295126473}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: NextNode
+      _node: {fileID: 8194312446476994431}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: PreviousNode
+        node: {fileID: -7339929055468810970}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  Active: 0
+  Next: {fileID: -7339929055468810970}
+  PreviousNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  NextNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  NewBackground: {fileID: 21300000, guid: c29ee73d0b32b3f44a76639c35135eb6, type: 3}
+  Fade: 1
+  FadeTime: 1
+--- !u!114 &8385627609139050202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e69886790097bca409901d96bb3c0b2b, type: 3}
+  m_Name: Exit Scene Element
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 19912, y: -1032}
+  ports:
+    keys:
+    - PreviousNode
+    - NextNode
+    values:
+    - _fieldName: PreviousNode
+      _node: {fileID: 8385627609139050202}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: NextNode
+        node: {fileID: -4452533260710204689}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: NextNode
+      _node: {fileID: 8385627609139050202}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: PreviousNode
+        node: {fileID: -5694023821529771397}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  Active: 0
+  Next: {fileID: -5694023821529771397}
+  PreviousNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  NextNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  CharacterName: Brenhan
+  ExitPosition: 0
+  ExitTime: 1
 --- !u!114 &8491329927423318038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4523,7 +7792,7 @@ MonoBehaviour:
   m_Name: Audio Dialogue Element
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 8792, y: -424}
+  position: {x: 10136, y: -648}
   ports:
     keys:
     - PreviousNode
@@ -4574,8 +7843,8 @@ MonoBehaviour:
     _typeConstraint: 0
     _dynamic: 0
   CharacterName: Evans
-  Dialogue: Wihh brenhan yah, aku denger denger kamu pernah juara kejuaraan bulu
-    tangkis tingkat nasional yah bren, keren banget kamu
+  Dialogue: Wihh Brenhan yah, aku denger denger kamu pernah juara kejuaraan bulu
+    tangkis tingkat nasional yah Bren, keren banget kamu
   Beep: 1
   BeepOnVowel: 0
   PitchShift: 0
@@ -4595,7 +7864,7 @@ MonoBehaviour:
   m_Name: Audio Dialogue Element
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 14024, y: -760}
+  position: {x: 15912, y: -600}
   ports:
     keys:
     - PreviousNode
@@ -4626,7 +7895,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   Active: 0
-  Next: {fileID: 0}
+  Next: {fileID: -2615948597722560653}
   PreviousNode:
     _fieldName: 
     _node: {fileID: 0}
@@ -4646,12 +7915,12 @@ MonoBehaviour:
     _typeConstraint: 0
     _dynamic: 0
   CharacterName: Brenhan
-  Dialogue: Wahh belajar bareng yah, aku coba carikan jadwalnya dlu yah
+  Dialogue: Wahh belajar bareng yah, kapah yah Evans
   Beep: 1
   BeepOnVowel: 0
   PitchShift: 0
   MaxPitch: 0
-  BoopSoundEffect: {fileID: 0}
+  BoopSoundEffect: {fileID: 8300000, guid: c8fa33de6006b874dbe76170f373dc23, type: 3}
   DialogueClip: {fileID: 0}
 --- !u!114 &8558728645935108945
 MonoBehaviour:
@@ -4666,7 +7935,7 @@ MonoBehaviour:
   m_Name: Change Sprite Element
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 5592, y: -392}
+  position: {x: 7160, y: -472}
   ports:
     keys:
     - PreviousNode
@@ -4718,6 +7987,75 @@ MonoBehaviour:
     _dynamic: 0
   CharacterName: Nicho Kating
   NewSprite: {fileID: 21300000, guid: 2317c7a1890434945bc5c5d136d0f94a, type: 3}
+--- !u!114 &8659774904804774652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31f75b66cbe889d4cb63a0a491cf5a3b, type: 3}
+  m_Name: Enter Scene Element
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 21832, y: -264}
+  ports:
+    keys:
+    - PreviousNode
+    - NextNode
+    values:
+    - _fieldName: PreviousNode
+      _node: {fileID: 8659774904804774652}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: NextNode
+        node: {fileID: -7761332632749385518}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: NextNode
+      _node: {fileID: 8659774904804774652}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: PreviousNode
+        node: {fileID: -4455669974092988047}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  Active: 0
+  Next: {fileID: -4455669974092988047}
+  PreviousNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  NextNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  CharacterName: Brenhan
+  Character: {fileID: 21300000, guid: 63ba35bba3efa584ea400795261540fc, type: 3}
+  Flip: 0
+  EnterFromDirection: 0
+  FinalPosition: 0
+  EnterTime: 2
 --- !u!114 &8683764935995393642
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4731,7 +8069,7 @@ MonoBehaviour:
   m_Name: Change Sprite Element
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 15212.118, y: -714.88684}
+  position: {x: 17192, y: -600}
   ports:
     keys:
     - PreviousNode
@@ -4762,7 +8100,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   Active: 0
-  Next: {fileID: 0}
+  Next: {fileID: 4151174159995227328}
   PreviousNode:
     _fieldName: 
     _node: {fileID: 0}
@@ -4783,3 +8121,146 @@ MonoBehaviour:
     _dynamic: 0
   CharacterName: Brenhan
   NewSprite: {fileID: 21300000, guid: 0567b6df4b10baa47a872b386241dde4, type: 3}
+--- !u!114 &8712895123817620987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adabf642a00adb64f98845666fedcc5a, type: 3}
+  m_Name: Audio Dialogue Element
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 7400, y: 600}
+  ports:
+    keys:
+    - PreviousNode
+    - NextNode
+    values:
+    - _fieldName: PreviousNode
+      _node: {fileID: 8712895123817620987}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: NextNode
+        node: {fileID: 4468268177828170441}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: NextNode
+      _node: {fileID: 8712895123817620987}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: PreviousNode
+        node: {fileID: -1865531538815950089}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  Active: 0
+  Next: {fileID: -1865531538815950089}
+  PreviousNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  NextNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  CharacterName: Nicho
+  Dialogue: Wah terima kasih banyak pak, saya janji tidak akan mengecewakan bapak
+  Beep: 1
+  BeepOnVowel: 0
+  PitchShift: 0
+  MaxPitch: 0
+  BoopSoundEffect: {fileID: 8300000, guid: c8fa33de6006b874dbe76170f373dc23, type: 3}
+  DialogueClip: {fileID: 0}
+--- !u!114 &8731290610620534054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adabf642a00adb64f98845666fedcc5a, type: 3}
+  m_Name: Audio Dialogue Element
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 20712, y: -1016}
+  ports:
+    keys:
+    - PreviousNode
+    - NextNode
+    values:
+    - _fieldName: PreviousNode
+      _node: {fileID: 8731290610620534054}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: NextNode
+        node: {fileID: -3787119526791937572}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: NextNode
+      _node: {fileID: 8731290610620534054}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: PreviousNode
+        node: {fileID: 4512040306052948238}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  Active: 0
+  Next: {fileID: 4512040306052948238}
+  PreviousNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  NextNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  CharacterName: Narrator
+  Dialogue: Waktu berlalu dan semua mahasiswa telah selesai menjalani ujian semester
+    mereka
+  Beep: 1
+  BeepOnVowel: 0
+  PitchShift: 0
+  MaxPitch: 0
+  BoopSoundEffect: {fileID: 8300000, guid: c8fa33de6006b874dbe76170f373dc23, type: 3}
+  DialogueClip: {fileID: 0}
