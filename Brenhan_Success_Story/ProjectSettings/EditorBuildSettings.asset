@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/UVNF - ExampleResources/Scenes/ExampleScene.unity
-    guid: f23814da02f177c438c919f4a1128b7e
+    path: Assets/BrenhanStory/MainMenu.unity
+    guid: 99b23c27efd77d4439f62ead6c5a4bf1
+  - enabled: 1
+    path: Assets/BrenhanStory/BrenhanGanteng.unity
+    guid: f43364caf7af92a47a45965df1837132
   m_configObjects: {}

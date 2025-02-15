@@ -746,6 +746,11 @@ PrefabInstance:
       propertyPath: BackgroundCanvasGroup
       value: 
       objectReference: {fileID: 965001804}
+    - target: {fileID: 4784810314356965893, guid: 795e0092d39ea594fbea9f7958d8fbbe,
+        type: 3}
+      propertyPath: m_AspectRatio
+      value: 1.7777778
+      objectReference: {fileID: 0}
     - target: {fileID: 6619636128490989126, guid: 795e0092d39ea594fbea9f7958d8fbbe,
         type: 3}
       propertyPath: m_Name
