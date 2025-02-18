@@ -480,8 +480,8 @@ MonoBehaviour:
     _typeConstraint: 0
     _dynamic: 0
   CharacterName: Narrator
-  Dialogue: "Nico sedih, namun dia benar benar belajar dari pengalaman pahitnya untuk
-    tidak semena mena sama orang lain dan selalu berbuat baik dengan sesama\u201D"
+  Dialogue: "Nicho sedih, namun dia benar benar belajar dari pengalaman pahitnya
+    untuk tidak semena mena sama orang lain dan selalu berbuat baik dengan sesama\u201D"
   Beep: 1
   BeepOnVowel: 0
   PitchShift: 0
@@ -1169,6 +1169,68 @@ MonoBehaviour:
   CharacterName: Brenhan
   ExitPosition: 0
   ExitTime: 1
+--- !u!114 &-5312196055106646222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc8c1f10e2849f8459929005181ff6a3, type: 3}
+  m_Name: Spawn Object Element
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 9846.4795, y: 248.00635}
+  ports:
+    keys:
+    - PreviousNode
+    - NextNode
+    values:
+    - _fieldName: PreviousNode
+      _node: {fileID: -5312196055106646222}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: NextNode
+        node: {fileID: 761547030029457639}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: NextNode
+      _node: {fileID: -5312196055106646222}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  Active: 0
+  Next: {fileID: 0}
+  PreviousNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  NextNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  ObjectToSpawn: {fileID: 3988610263456412940, guid: 4f217b45c8b313c498a4963c56905a99,
+    type: 3}
 --- !u!114 &-5077881608772388172
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1625,14 +1687,14 @@ MonoBehaviour:
         PublicKeyToken=null
       connections:
       - fieldName: PreviousNode
-        node: {fileID: 3265720623145726910}
+        node: {fileID: 1770325118709004150}
         reroutePoints: []
       _direction: 1
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
   Active: 0
-  Next: {fileID: 3265720623145726910}
+  Next: {fileID: 1770325118709004150}
   PreviousNode:
     _fieldName: 
     _node: {fileID: 0}
@@ -2841,7 +2903,10 @@ MonoBehaviour:
       _node: {fileID: -2600975054793003665}
       _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
-      connections: []
+      connections:
+      - fieldName: NextNode
+        node: {fileID: 752199792074477770}
+        reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
@@ -3933,8 +3998,9 @@ MonoBehaviour:
   - {fileID: 5882214817497998446}
   - {fileID: -5343891650230754450}
   - {fileID: 258446910205005845}
-  - {fileID: 6140670441463795755}
-  - {fileID: 3265720623145726910}
+  - {fileID: 5709534504654707560}
+  - {fileID: 1770325118709004150}
+  - {fileID: -5312196055106646222}
   StoryNames:
   - Brenhan Story
 --- !u!114 &255884088687959799
@@ -4318,7 +4384,10 @@ MonoBehaviour:
       _node: {fileID: 752199792074477770}
       _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
-      connections: []
+      connections:
+      - fieldName: PreviousNode
+        node: {fileID: -2600975054793003665}
+        reroutePoints: []
       _direction: 1
       _connectionType: 1
       _typeConstraint: 0
@@ -4389,14 +4458,14 @@ MonoBehaviour:
         PublicKeyToken=null
       connections:
       - fieldName: PreviousNode
-        node: {fileID: 6140670441463795755}
+        node: {fileID: -5312196055106646222}
         reroutePoints: []
       _direction: 1
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
   Active: 0
-  Next: {fileID: 6140670441463795755}
+  Next: {fileID: 0}
   PreviousNode:
     _fieldName: 
     _node: {fileID: 0}
@@ -4655,13 +4724,16 @@ MonoBehaviour:
       _node: {fileID: 1048497575071395081}
       _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
-      connections: []
+      connections:
+      - fieldName: PreviousNode
+        node: {fileID: 5709534504654707560}
+        reroutePoints: []
       _direction: 1
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
   Active: 0
-  Next: {fileID: 0}
+  Next: {fileID: 5709534504654707560}
   PreviousNode:
     _fieldName: 
     _node: {fileID: 0}
@@ -4960,6 +5032,68 @@ MonoBehaviour:
   Dialogue: Brenhan, adalah seorang siswa yang baru lulus dari SMK. Dia baru saja
     masuk ke Universitas Top di daerahnya. Hari ini, hari pertama dia masuk ke kelas
     dan mengejar pendidikannya.
+--- !u!114 &1770325118709004150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc8c1f10e2849f8459929005181ff6a3, type: 3}
+  m_Name: Spawn Object Element
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 9912, y: 680}
+  ports:
+    keys:
+    - PreviousNode
+    - NextNode
+    values:
+    - _fieldName: PreviousNode
+      _node: {fileID: 1770325118709004150}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: NextNode
+        node: {fileID: -4347841974163663217}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: NextNode
+      _node: {fileID: 1770325118709004150}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  Active: 0
+  Next: {fileID: 0}
+  PreviousNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  NextNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  ObjectToSpawn: {fileID: 3988610263456412940, guid: 4f217b45c8b313c498a4963c56905a99,
+    type: 3}
 --- !u!114 &1957804071662857071
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5564,74 +5698,6 @@ MonoBehaviour:
     _dynamic: 0
   CharacterName: Brenhan
   Dialogue: Ma-maaf kak saya lupa bawa uang hari ini
---- !u!114 &3265720623145726910
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: adabf642a00adb64f98845666fedcc5a, type: 3}
-  m_Name: Audio Dialogue Element
-  m_EditorClassIdentifier: 
-  graph: {fileID: 11400000}
-  position: {x: 9896, y: 648}
-  ports:
-    keys:
-    - PreviousNode
-    - NextNode
-    values:
-    - _fieldName: PreviousNode
-      _node: {fileID: 3265720623145726910}
-      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections:
-      - fieldName: NextNode
-        node: {fileID: -4347841974163663217}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: NextNode
-      _node: {fileID: 3265720623145726910}
-      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
-  Active: 0
-  Next: {fileID: 0}
-  PreviousNode:
-    _fieldName: 
-    _node: {fileID: 0}
-    _typeQualifiedName: 
-    connections: []
-    _direction: 0
-    _connectionType: 0
-    _typeConstraint: 0
-    _dynamic: 0
-  NextNode:
-    _fieldName: 
-    _node: {fileID: 0}
-    _typeQualifiedName: 
-    connections: []
-    _direction: 0
-    _connectionType: 0
-    _typeConstraint: 0
-    _dynamic: 0
-  CharacterName: Narrator
-  Dialogue: Tamat...
-  Beep: 1
-  BeepOnVowel: 0
-  PitchShift: 0
-  MaxPitch: 0
-  BoopSoundEffect: {fileID: 8300000, guid: c8fa33de6006b874dbe76170f373dc23, type: 3}
-  DialogueClip: {fileID: 0}
 --- !u!114 &3299889846295126473
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6597,6 +6663,68 @@ MonoBehaviour:
     _dynamic: 0
   CharacterName: Brenhan
   NewSprite: {fileID: 21300000, guid: 163ea6703372e1646a618eef332cedc4, type: 3}
+--- !u!114 &5709534504654707560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc8c1f10e2849f8459929005181ff6a3, type: 3}
+  m_Name: Spawn Object Element
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 23153.602, y: -250.29996}
+  ports:
+    keys:
+    - PreviousNode
+    - NextNode
+    values:
+    - _fieldName: PreviousNode
+      _node: {fileID: 5709534504654707560}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: NextNode
+        node: {fileID: 1048497575071395081}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: NextNode
+      _node: {fileID: 5709534504654707560}
+      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  Active: 0
+  Next: {fileID: 0}
+  PreviousNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  NextNode:
+    _fieldName: 
+    _node: {fileID: 0}
+    _typeQualifiedName: 
+    connections: []
+    _direction: 0
+    _connectionType: 0
+    _typeConstraint: 0
+    _dynamic: 0
+  ObjectToSpawn: {fileID: 3988610263456412940, guid: 4f217b45c8b313c498a4963c56905a99,
+    type: 3}
 --- !u!114 &5842048289643196555
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6941,74 +7069,6 @@ MonoBehaviour:
     _dynamic: 0
   CharacterName: Nicho Kating
   Dialogue: Sial, baiklah kamu selamat buat hari ini anak baru
-  Beep: 1
-  BeepOnVowel: 0
-  PitchShift: 0
-  MaxPitch: 0
-  BoopSoundEffect: {fileID: 8300000, guid: c8fa33de6006b874dbe76170f373dc23, type: 3}
-  DialogueClip: {fileID: 0}
---- !u!114 &6140670441463795755
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: adabf642a00adb64f98845666fedcc5a, type: 3}
-  m_Name: Audio Dialogue Element
-  m_EditorClassIdentifier: 
-  graph: {fileID: 11400000}
-  position: {x: 9528, y: 216}
-  ports:
-    keys:
-    - PreviousNode
-    - NextNode
-    values:
-    - _fieldName: PreviousNode
-      _node: {fileID: 6140670441463795755}
-      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections:
-      - fieldName: NextNode
-        node: {fileID: 761547030029457639}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: NextNode
-      _node: {fileID: 6140670441463795755}
-      _typeQualifiedName: XNode.NodePort, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
-  Active: 0
-  Next: {fileID: 0}
-  PreviousNode:
-    _fieldName: 
-    _node: {fileID: 0}
-    _typeQualifiedName: 
-    connections: []
-    _direction: 0
-    _connectionType: 0
-    _typeConstraint: 0
-    _dynamic: 0
-  NextNode:
-    _fieldName: 
-    _node: {fileID: 0}
-    _typeQualifiedName: 
-    connections: []
-    _direction: 0
-    _connectionType: 0
-    _typeConstraint: 0
-    _dynamic: 0
-  CharacterName: Narrator
-  Dialogue: Tamat...
   Beep: 1
   BeepOnVowel: 0
   PitchShift: 0
@@ -7368,8 +7428,8 @@ MonoBehaviour:
     _typeConstraint: 0
     _dynamic: 0
   Choices:
-  - Menolak NIcho bekerja di perusahaan
-  - Menerima  Nicho bekerja di perusahaan
+  - Menolak Nicho bekerja di perusahaan
+  - Menerima Nicho bekerja di perusahaan
   ShuffleChocies: 0
   HideDialogue: 1
 --- !u!114 &7487686641615215702
@@ -7915,7 +7975,7 @@ MonoBehaviour:
     _typeConstraint: 0
     _dynamic: 0
   CharacterName: Brenhan
-  Dialogue: Wahh belajar bareng yah, kapah yah Evans
+  Dialogue: Wahh belajar bareng yah, kapah yah Evans?
   Beep: 1
   BeepOnVowel: 0
   PitchShift: 0
