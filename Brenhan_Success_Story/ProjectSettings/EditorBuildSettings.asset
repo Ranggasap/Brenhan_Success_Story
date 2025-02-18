@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/BrenhanStory/BrenhanGanteng.unity
     guid: f43364caf7af92a47a45965df1837132
+  - enabled: 1
+    path: Assets/BrenhanStory/EndGame.unity
+    guid: 6947e2fb7049e434c95e9d74d75bb16c
   m_configObjects: {}
